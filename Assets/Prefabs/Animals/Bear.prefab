@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 8614340073357679231}
   - component: {fileID: 6910229800305512304}
   - component: {fileID: -3058000906660615396}
+  - component: {fileID: 2512030503853300531}
+  - component: {fileID: 2929232533974569606}
   m_Layer: 0
   m_Name: Bear
   m_TagString: Untagged
@@ -22,21 +24,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2926660006583335885
-Transform:
+--- !u!224 &2926660006583335885
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2748513627907490572}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1999292, y: 1.96, z: 0.059448}
+  m_LocalPosition: {x: 0, y: 0, z: 0.059448}
   m_LocalScale: {x: 13.861243, y: 13.861243, z: 13.861243}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.1999292, y: 1.96}
+  m_SizeDelta: {x: 0.24, y: 0.13}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1544364727296227659
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80,7 +86,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10
   m_Sprite: {fileID: -3180414583539082415, guid: 5f48aee4cf20fda4f9968c613bf7a677, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -214,3 +220,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxCheckFrequency: 0.1
+--- !u!114 &2512030503853300531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2748513627907490572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215427b6c566e9c49a4fa375c6fa5c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!222 &2929232533974569606
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2748513627907490572}
+  m_CullTransparentMesh: 1
