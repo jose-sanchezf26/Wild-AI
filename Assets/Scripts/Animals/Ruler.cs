@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 public class Ruler : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     private RectTransform rectTransform;
+    [SerializeField] private Canvas canvas;
     private CanvasGroup canvasGroup;
 
     private void Awake()
@@ -19,7 +20,7 @@ public class Ruler : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta;
+        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
