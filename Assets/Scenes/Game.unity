@@ -17249,6 +17249,7 @@ MonoBehaviour:
   registerWindow: {fileID: 2131692840}
   animalImage: {fileID: 1189099680}
   ruler: {fileID: 1902803248}
+  animalNumber: {fileID: 548793585}
 --- !u!1 &548793585
 GameObject:
   m_ObjectHideFlags: 0
@@ -18777,7 +18778,7 @@ MonoBehaviour:
   offsetY: 1
   offsetNumberY: 1
   offsetX: 1
-  offsetNumberX: 1
+  offsetNumberX: 5
 --- !u!114 &1189099683
 MonoBehaviour:
   m_ObjectHideFlags: 0

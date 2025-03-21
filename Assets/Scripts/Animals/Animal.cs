@@ -15,6 +15,7 @@ public class Animal : MonoBehaviour
     [SerializeField] private Vector2 widthRange = new Vector2(0.8f, 1.2f);
     [SerializeField] private Vector2 weightRange = new Vector2(0.8f, 1.2f);
     [SerializeField] private Color[] possibleColors;
+    [SerializeField] private float multiplier = 1.0f;
 
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
@@ -39,10 +40,10 @@ public class Animal : MonoBehaviour
 
     private void ApplyRandomVariations()
     {
-        height *= Random.Range(heightRange.x, heightRange.y);
-        width *= Random.Range(widthRange.x, widthRange.y);
-        weight *= Random.Range(weightRange.x, weightRange.y);
-        transform.localScale = new Vector3(width, height, 1);
+        height = Random.Range(heightRange.x, heightRange.y);
+        width = Random.Range(widthRange.x, widthRange.y);
+        weight = Random.Range(weightRange.x, weightRange.y);
+        transform.localScale = new Vector3(width*multiplier, height*multiplier, 1);
 
         if (possibleColors.Length > 0)
         {

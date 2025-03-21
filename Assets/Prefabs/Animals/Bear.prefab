@@ -163,7 +163,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.264, y: 0.132}
+    oldSize: {x: 0.24, y: 0.12}
     newSize: {x: 0.22, y: 0.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -187,10 +187,11 @@ MonoBehaviour:
   height: 13
   width: 13
   color: {r: 0, g: 0, b: 0, a: 0}
-  heightRange: {x: 0.8, y: 1.2}
-  widthRange: {x: 0.8, y: 1.2}
-  weightRange: {x: 0.8, y: 1.2}
+  heightRange: {x: 1.8, y: 3}
+  widthRange: {x: 0.9, y: 1.5}
+  weightRange: {x: 130, y: 680}
   possibleColors: []
+  multiplier: 10
 --- !u!114 &6910229800305512304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,8 +234,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiImageRectTransform: {fileID: 0}
+  numberImage: {fileID: 0}
   offsetY: 0.5
+  offsetNumberY: 0.5
   offsetX: 0.5
+  offsetNumberX: 0.5
 --- !u!222 &2929232533974569606
 CanvasRenderer:
   m_ObjectHideFlags: 0
