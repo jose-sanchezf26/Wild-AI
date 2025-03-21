@@ -1,0 +1,1265 @@
+fileFormatVersion: 2
+guid: d24c72eaf2e104e418701aadd6256c96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1337790881254822095
+    second: MiniBear_scaled_3x_pngcrushed_0
+  - first:
+      213: 6846249595246924623
+    second: MiniBear_scaled_3x_pngcrushed_1
+  - first:
+      213: -2742167118862733112
+    second: MiniBear_scaled_3x_pngcrushed_2
+  - first:
+      213: 393996880976614913
+    second: MiniBear_scaled_3x_pngcrushed_3
+  - first:
+      213: -4372539085543014917
+    second: MiniBear_scaled_3x_pngcrushed_4
+  - first:
+      213: -8746186737855271389
+    second: MiniBear_scaled_3x_pngcrushed_5
+  - first:
+      213: 3721557557850382682
+    second: MiniBear_scaled_3x_pngcrushed_6
+  - first:
+      213: 4702943183753328945
+    second: MiniBear_scaled_3x_pngcrushed_7
+  - first:
+      213: 2602227173120505158
+    second: MiniBear_scaled_3x_pngcrushed_8
+  - first:
+      213: -6197633346094645193
+    second: MiniBear_scaled_3x_pngcrushed_9
+  - first:
+      213: 1907719550093655997
+    second: MiniBear_scaled_3x_pngcrushed_10
+  - first:
+      213: 606617878128573133
+    second: MiniBear_scaled_3x_pngcrushed_11
+  - first:
+      213: -4915623566987633481
+    second: MiniBear_scaled_3x_pngcrushed_12
+  - first:
+      213: 4890214130325294524
+    second: MiniBear_scaled_3x_pngcrushed_13
+  - first:
+      213: -5633037664871767533
+    second: MiniBear_scaled_3x_pngcrushed_14
+  - first:
+      213: -5687132886016666440
+    second: MiniBear_scaled_3x_pngcrushed_15
+  - first:
+      213: -1306937568911243290
+    second: MiniBear_scaled_3x_pngcrushed_16
+  - first:
+      213: 2858086922287083229
+    second: MiniBear_scaled_3x_pngcrushed_17
+  - first:
+      213: 476405692505284781
+    second: MiniBear_scaled_3x_pngcrushed_18
+  - first:
+      213: 7916930023451328431
+    second: MiniBear_scaled_3x_pngcrushed_19
+  - first:
+      213: -4564177026839045208
+    second: MiniBear_scaled_3x_pngcrushed_20
+  - first:
+      213: 8396592515797864275
+    second: MiniBear_scaled_3x_pngcrushed_21
+  - first:
+      213: -1214284378953212750
+    second: MiniBear_scaled_3x_pngcrushed_22
+  - first:
+      213: 4075738854701521950
+    second: MiniBear_scaled_3x_pngcrushed_23
+  - first:
+      213: -5466815437133603627
+    second: MiniBear_scaled_3x_pngcrushed_24
+  - first:
+      213: -2977198556625322454
+    second: MiniBear_scaled_3x_pngcrushed_25
+  - first:
+      213: 1525292168007819249
+    second: MiniBear_scaled_3x_pngcrushed_26
+  - first:
+      213: 1326721781076195160
+    second: MiniBear_scaled_3x_pngcrushed_27
+  - first:
+      213: 8908123264404063263
+    second: MiniBear_scaled_3x_pngcrushed_28
+  - first:
+      213: 2600680357950969816
+    second: MiniBear_scaled_3x_pngcrushed_29
+  - first:
+      213: 7596359711930801687
+    second: MiniBear_scaled_3x_pngcrushed_30
+  - first:
+      213: -6438148127307021913
+    second: MiniBear_scaled_3x_pngcrushed_31
+  - first:
+      213: 4769243915188930277
+    second: MiniBear_scaled_3x_pngcrushed_32
+  - first:
+      213: -5228231583821431439
+    second: MiniBear_scaled_3x_pngcrushed_33
+  - first:
+      213: 9174350329259561769
+    second: MiniBear_scaled_3x_pngcrushed_34
+  - first:
+      213: 5061800474376824069
+    second: MiniBear_scaled_3x_pngcrushed_35
+  - first:
+      213: 8253632341716901541
+    second: MiniBear_scaled_3x_pngcrushed_36
+  - first:
+      213: 1557152011229223542
+    second: MiniBear_scaled_3x_pngcrushed_37
+  - first:
+      213: 8572258420835647558
+    second: MiniBear_scaled_3x_pngcrushed_38
+  - first:
+      213: 7752891758768200447
+    second: MiniBear_scaled_3x_pngcrushed_39
+  - first:
+      213: 4445756125280981939
+    second: MiniBear_scaled_3x_pngcrushed_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 550
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1350
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13fac0b08463f6de0800000000000000
+      internalID: -1337790881254822095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1350
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43da50ebb3c20f50800000000000000
+      internalID: 6846249595246924623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1350
+        width: 132
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c03e65b88dd1f9d0800000000000000
+      internalID: -2742167118862733112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1350
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10619356312c77500800000000000000
+      internalID: 393996880976614913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1158
+        width: 132
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd72bf4ede9153c0800000000000000
+      internalID: -4372539085543014917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1158
+        width: 150
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e67ee408d4f9680800000000000000
+      internalID: -8746186737855271389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1170
+        width: 168
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51a7d691e0a5a330800000000000000
+      internalID: 3721557557850382682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1158
+        width: 144
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139367a88e5344140800000000000000
+      internalID: 4702943183753328945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1158
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64577b6a3d7fc1420800000000000000
+      internalID: 2602227173120505158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1158
+        width: 132
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730c9e5ee459df9a0800000000000000
+      internalID: -6197633346094645193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 966
+        width: 132
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf7662c2d4997a10800000000000000
+      internalID: 1907719550093655997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 966
+        width: 144
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca31440fb32b6800800000000000000
+      internalID: 606617878128573133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 966
+        width: 132
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcd920f86238cbb0800000000000000
+      internalID: -4915623566987633481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 774
+        width: 108
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd82a197d78dd340800000000000000
+      internalID: 4890214130325294524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 774
+        width: 108
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3122ce2c61e63d1b0800000000000000
+      internalID: -5633037664871767533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 774
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4d88a95ce3311b0800000000000000
+      internalID: -5687132886016666440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 774
+        width: 120
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7ce6d9433dcdde0800000000000000
+      internalID: -1306937568911243290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 786
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde6c1cb9e6f9a720800000000000000
+      internalID: 2858086922287083229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 774
+        width: 120
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da060c604788c9600800000000000000
+      internalID: 476405692505284781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 774
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faff07f19e59edd60800000000000000
+      internalID: 7916930023451328431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 582
+        width: 126
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab92471d29c8a0c0800000000000000
+      internalID: -4564177026839045208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_21
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 582
+        width: 132
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fc5d3f760b68470800000000000000
+      internalID: 8396592515797864275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_22
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 582
+        width: 150
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc10387acef52fe0800000000000000
+      internalID: -1214284378953212750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_23
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 582
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1cddb7e4eeef8830800000000000000
+      internalID: 4075738854701521950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_24
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 636
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc97090358f124b0800000000000000
+      internalID: -5466815437133603627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_25
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 582
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2eba86cfaddea6d0800000000000000
+      internalID: -2977198556625322454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_26
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 618
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff9acc352dea2510800000000000000
+      internalID: 1525292168007819249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_27
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 600
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857f1dc3e66796210800000000000000
+      internalID: 1326721781076195160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_28
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 390
+        width: 132
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14823669e200ab70800000000000000
+      internalID: 8908123264404063263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_29
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 390
+        width: 126
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7d00ea109771420800000000000000
+      internalID: 2600680357950969816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_30
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 390
+        width: 90
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e59b729e0bb6960800000000000000
+      internalID: 7596359711930801687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 390
+        width: 84
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1c484936a17a6a0800000000000000
+      internalID: -6438148127307021913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_32
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 390
+        width: 84
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e687048212cf2240800000000000000
+      internalID: 4769243915188930277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_33
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 390
+        width: 84
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d78da23179177b0800000000000000
+      internalID: -5228231583821431439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_34
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 390
+        width: 84
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92311844407d15f70800000000000000
+      internalID: 9174350329259561769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_35
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 390
+        width: 84
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505622f76b02f3640800000000000000
+      internalID: 5061800474376824069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_36
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 390
+        width: 126
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae16ba92eaca8270800000000000000
+      internalID: 8253632341716901541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_37
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 390
+        width: 132
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a5a9a018d1c9510800000000000000
+      internalID: 1557152011229223542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_38
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 198
+        width: 126
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64082c0bd97c6f670800000000000000
+      internalID: 8572258420835647558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_39
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 198
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa9e6f5afdc79b60800000000000000
+      internalID: 7752891758768200447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_40
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 6
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3d36d24af72bd30800000000000000
+      internalID: 4445756125280981939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_41
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 6
+        width: 138
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6315317e9a42ae64f9a5174a17f90758
+      internalID: 53016277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_42
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 6
+        width: 162
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e888dd89bcac2f94fa1a60fa7b23336f
+      internalID: 1401168585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBear_scaled_3x_pngcrushed_43
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 6
+        width: 150
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a048cb17899a1c499b05069ba53879e
+      internalID: 2130099194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d0dc5077c5501114d8cc6703f5408ab5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MiniBear_scaled_3x_pngcrushed_0: -1337790881254822095
+      MiniBear_scaled_3x_pngcrushed_1: 6846249595246924623
+      MiniBear_scaled_3x_pngcrushed_10: 1907719550093655997
+      MiniBear_scaled_3x_pngcrushed_11: 606617878128573133
+      MiniBear_scaled_3x_pngcrushed_12: -4915623566987633481
+      MiniBear_scaled_3x_pngcrushed_13: 4890214130325294524
+      MiniBear_scaled_3x_pngcrushed_14: -5633037664871767533
+      MiniBear_scaled_3x_pngcrushed_15: -5687132886016666440
+      MiniBear_scaled_3x_pngcrushed_16: -1306937568911243290
+      MiniBear_scaled_3x_pngcrushed_17: 2858086922287083229
+      MiniBear_scaled_3x_pngcrushed_18: 476405692505284781
+      MiniBear_scaled_3x_pngcrushed_19: 7916930023451328431
+      MiniBear_scaled_3x_pngcrushed_2: -2742167118862733112
+      MiniBear_scaled_3x_pngcrushed_20: -4564177026839045208
+      MiniBear_scaled_3x_pngcrushed_21: 8396592515797864275
+      MiniBear_scaled_3x_pngcrushed_22: -1214284378953212750
+      MiniBear_scaled_3x_pngcrushed_23: 4075738854701521950
+      MiniBear_scaled_3x_pngcrushed_24: -5466815437133603627
+      MiniBear_scaled_3x_pngcrushed_25: -2977198556625322454
+      MiniBear_scaled_3x_pngcrushed_26: 1525292168007819249
+      MiniBear_scaled_3x_pngcrushed_27: 1326721781076195160
+      MiniBear_scaled_3x_pngcrushed_28: 8908123264404063263
+      MiniBear_scaled_3x_pngcrushed_29: 2600680357950969816
+      MiniBear_scaled_3x_pngcrushed_3: 393996880976614913
+      MiniBear_scaled_3x_pngcrushed_30: 7596359711930801687
+      MiniBear_scaled_3x_pngcrushed_31: -6438148127307021913
+      MiniBear_scaled_3x_pngcrushed_32: 4769243915188930277
+      MiniBear_scaled_3x_pngcrushed_33: -5228231583821431439
+      MiniBear_scaled_3x_pngcrushed_34: 9174350329259561769
+      MiniBear_scaled_3x_pngcrushed_35: 5061800474376824069
+      MiniBear_scaled_3x_pngcrushed_36: 8253632341716901541
+      MiniBear_scaled_3x_pngcrushed_37: 1557152011229223542
+      MiniBear_scaled_3x_pngcrushed_38: 8572258420835647558
+      MiniBear_scaled_3x_pngcrushed_39: 7752891758768200447
+      MiniBear_scaled_3x_pngcrushed_4: -4372539085543014917
+      MiniBear_scaled_3x_pngcrushed_40: 4445756125280981939
+      MiniBear_scaled_3x_pngcrushed_41: 53016277
+      MiniBear_scaled_3x_pngcrushed_42: 1401168585
+      MiniBear_scaled_3x_pngcrushed_43: 2130099194
+      MiniBear_scaled_3x_pngcrushed_5: -8746186737855271389
+      MiniBear_scaled_3x_pngcrushed_6: 3721557557850382682
+      MiniBear_scaled_3x_pngcrushed_7: 4702943183753328945
+      MiniBear_scaled_3x_pngcrushed_8: 2602227173120505158
+      MiniBear_scaled_3x_pngcrushed_9: -6197633346094645193
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
