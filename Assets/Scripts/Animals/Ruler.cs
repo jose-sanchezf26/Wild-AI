@@ -6,11 +6,25 @@ public class Ruler : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
     private RectTransform rectTransform;
     [SerializeField] private Canvas canvas;
     private CanvasGroup canvasGroup;
+    [SerializeField] private Vector2 initialPosition;
+    public bool onHorizontalMode = true;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+    }
+
+    void Update()
+    {
+        if (gameObject.activeSelf)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                onHorizontalMode = !onHorizontalMode;
+                rectTransform.localEulerAngles = new Vector3(0, 0, onHorizontalMode ? 0 : 270);
+            }
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -33,5 +47,10 @@ public class Ruler : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
     {
         Debug.Log("RulerUI.OnEndDrag");
         canvasGroup.blocksRaycasts = true;
+    }
+
+    public void RestartPosition()
+    {
+        GetComponent<RectTransform>().anchoredPosition = initialPosition;
     }
 }

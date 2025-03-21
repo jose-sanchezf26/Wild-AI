@@ -4,6 +4,7 @@ public class WindowsManager : MonoBehaviour
 {
     public GameObject registerWindow;
     public GameObject animalImage;
+    public Ruler ruler;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,6 +21,7 @@ public class WindowsManager : MonoBehaviour
             if (!registerWindow.activeSelf)
             {
                 Time.timeScale = 0f;
+                ruler.RestartPosition();
                 animalImage.SetActive(true);
             }
             else
