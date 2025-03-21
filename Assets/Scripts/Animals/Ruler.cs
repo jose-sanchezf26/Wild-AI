@@ -8,6 +8,7 @@ public class Ruler : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
     private CanvasGroup canvasGroup;
     [SerializeField] private Vector2 initialPosition;
     public bool onHorizontalMode = true;
+    public GameObject numberImage;
 
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class Ruler : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
     public void OnDrag(PointerEventData eventData)
     {
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        numberImage.SetActive(false);
     }
 
     public void OnBeginDrag(PointerEventData eventData)
