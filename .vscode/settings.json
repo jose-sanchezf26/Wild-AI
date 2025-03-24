@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Wild AI.sln"
+    "dotnet.defaultSolution": "Wild-AI.sln"
 }
