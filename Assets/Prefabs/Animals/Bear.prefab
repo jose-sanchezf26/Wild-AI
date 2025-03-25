@@ -187,8 +187,8 @@ MonoBehaviour:
   height: 13
   width: 13
   color: {r: 0, g: 0, b: 0, a: 0}
-  heightRange: {x: 1.8, y: 3}
-  widthRange: {x: 0.9, y: 1.5}
+  heightRange: {x: 0.9, y: 1.5}
+  widthRange: {x: 1.8, y: 3}
   weightRange: {x: 130, y: 680}
   possibleColors: []
   multiplier: 10

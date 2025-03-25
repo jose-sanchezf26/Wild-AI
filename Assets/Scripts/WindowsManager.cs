@@ -5,6 +5,7 @@ public class WindowsManager : MonoBehaviour
     public GameObject registerWindow;
     public GameObject animalImage;
     public Ruler ruler;
+    public WeightScale weightScale;
     public GameObject animalNumber;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,6 +24,7 @@ public class WindowsManager : MonoBehaviour
             {
                 Time.timeScale = 0f;
                 ruler.RestartPosition();
+                weightScale.RestartPosition();
             }
             else
             {

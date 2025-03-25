@@ -21,7 +21,7 @@ public class AnimalRulerDrop : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerDrag != null)
+        if (eventData.pointerDrag.GetComponent<Ruler>() != null)
         {
             Ruler ruler = eventData.pointerDrag.GetComponent<Ruler>();
             // Posición horizontal
@@ -43,7 +43,7 @@ public class AnimalRulerDrop : MonoBehaviour, IDropHandler
                 float numberHeight = numberImageRectTransform.sizeDelta.y * numberImageRectTransform.lossyScale.y;
                 float numberYPosition = newYPosition - (uiImageRectTransform.sizeDelta.y / 2) - (numberHeight / 2) - offsetNumberY;
                 numberImageRectTransform.position = new UnityEngine.Vector2(worldPos.x, numberYPosition);
-                numberImage.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = animal.height.ToString("F2") + "m";
+                numberImage.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = animal.width.ToString("F2") + "m";
             }
             else // Posición vertical
             {
@@ -78,7 +78,7 @@ public class AnimalRulerDrop : MonoBehaviour, IDropHandler
 
                 // Aplicar la nueva posición
                 numberImageRectTransform.position = new UnityEngine.Vector2(numberXPosition, worldPos.y);
-                numberImage.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = animal.width.ToString("F2") + "m";
+                numberImage.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = animal.height.ToString("F2") + "m";
             }
         }
     }
