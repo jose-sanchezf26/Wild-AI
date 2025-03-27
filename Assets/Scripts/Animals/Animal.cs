@@ -93,10 +93,14 @@ public class Animal : MonoBehaviour
         {
             // Pasamos los atributos del animal a la imagen
             AnimalRulerDrop rulerDrop = uiImage.GetComponent<AnimalRulerDrop>();
-            rulerDrop.animal.weight = weight;
-            rulerDrop.animal.height = height;
-            rulerDrop.animal.width = width;
-            rulerDrop.animal.color = color;
+            AnimalWeightScaleDrop weightScaleDrop = uiImage.GetComponent<AnimalWeightScaleDrop>();
+            AnimalData animal = new AnimalData();
+            animal.weight = weight;
+            animal.height = height;
+            animal.width = width;
+            animal.color = "indeterminado";
+            rulerDrop.animal = animal; 
+            weightScaleDrop.animalData = animal;
 
             // Convertir las dimensiones del animal a la UI teniendo en cuenta el zoom de la cámara
             float worldWidth = GetComponent<SpriteRenderer>().bounds.size.x;
@@ -121,5 +125,5 @@ public class AnimalData
     public float weight;
     public float height;
     public float width;
-    public Color color;
+    public string color;
 }
