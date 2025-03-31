@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class AnimalWeightScaleDrop : MonoBehaviour, IDropHandler
 {
     public AnimalData animalData;
+    public TMP_InputField inputFieldWeight;
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -12,6 +14,7 @@ public class AnimalWeightScaleDrop : MonoBehaviour, IDropHandler
         {
             weightScale.numberImage.SetActive(true);
             weightScale.UpdateText(animalData.weight);
+            inputFieldWeight.text = animalData.weight.ToString("F2");
         }
     }
 }

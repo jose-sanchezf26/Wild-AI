@@ -1,5 +1,6 @@
 using System.Data;
 using System.Numerics;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -13,6 +14,8 @@ public class AnimalRulerDrop : MonoBehaviour, IDropHandler
     public float offsetNumberX;
     public AnimalData animal;
     private Camera mainCamera;
+    public TMP_InputField inputFieldWidth;
+    public TMP_InputField inputFieldHeight;
     void Start()
     {
         animal = new AnimalData();
@@ -44,6 +47,7 @@ public class AnimalRulerDrop : MonoBehaviour, IDropHandler
                 float numberYPosition = newYPosition - (uiImageRectTransform.sizeDelta.y / 2) - (numberHeight / 2) - offsetNumberY;
                 numberImageRectTransform.position = new UnityEngine.Vector2(worldPos.x, numberYPosition);
                 numberImage.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = animal.width.ToString("F2") + "m";
+                inputFieldWidth.text = animal.width.ToString("F2");
             }
             else // Posición vertical
             {
@@ -79,6 +83,7 @@ public class AnimalRulerDrop : MonoBehaviour, IDropHandler
                 // Aplicar la nueva posición
                 numberImageRectTransform.position = new UnityEngine.Vector2(numberXPosition, worldPos.y);
                 numberImage.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = animal.height.ToString("F2") + "m";
+                inputFieldHeight.text = animal.height.ToString("F2");
             }
         }
     }
