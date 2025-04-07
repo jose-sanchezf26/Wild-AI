@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class DataEntry : MonoBehaviour
 {
     public AnimalData animal;
-    
+
     public void Destroy()
     {
         AnimalDataManager.Instance.RemoveAnimal(animal);
@@ -18,7 +18,9 @@ public class DataEntry : MonoBehaviour
         transform.Find("Width").GetComponent<TextMeshProUGUI>().text = animal.width.ToString();
         transform.Find("Height").GetComponent<TextMeshProUGUI>().text = animal.height.ToString();
         transform.Find("Weight").GetComponent<TextMeshProUGUI>().text = animal.weight.ToString();
-        transform.Find("Color").GetComponent<TextMeshProUGUI>().text = animal.color;
-        transform.Find("Name").GetComponent<TextMeshProUGUI>().text = animal.name;
+        if (transform.Find("Color") != null)
+            transform.Find("Color").GetComponent<TextMeshProUGUI>().text = animal.color;
+        if (transform.Find("Level") != null)
+            transform.Find("Name").GetComponent<TextMeshProUGUI>().text = animal.name;
     }
 }
