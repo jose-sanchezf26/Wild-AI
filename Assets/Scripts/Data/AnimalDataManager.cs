@@ -7,9 +7,24 @@ public class AnimalDataManager : MonoBehaviour
 {
     // Lo hacemos Singleton
     public static AnimalDataManager Instance { get; private set; }
+
+    // Nivel
     public int level;
 
+    // Lista de datos de animales
     public List<AnimalData> animalDataList;
+
+    // Campos para registrar un animal
+    [SerializeField] private TMP_InputField widthText;
+    [SerializeField] private TMP_InputField heightText;
+    [SerializeField] private TMP_InputField weightText;
+    [SerializeField] private TMP_Dropdown colorDropdown;
+    [SerializeField] private TMP_InputField nameText;
+
+    // Campos para visualizar el panel de datos
+    [SerializeField] private GameObject dataEntry;
+    [SerializeField] private GameObject dataEntryLevel1;
+    [SerializeField] private GameObject dataPanel;
 
     private void Awake()
     {
@@ -26,12 +41,6 @@ public class AnimalDataManager : MonoBehaviour
         animalDataList = new List<AnimalData>();
     }
 
-    // Campos para registrar un animal
-    [SerializeField] private TMP_InputField widthText;
-    [SerializeField] private TMP_InputField heightText;
-    [SerializeField] private TMP_InputField weightText;
-    [SerializeField] private TMP_Dropdown colorDropdown;
-    [SerializeField] private TMP_InputField nameText;
     public void AddAnimal()
     {
         AnimalData newAnimal = new AnimalData
@@ -44,12 +53,18 @@ public class AnimalDataManager : MonoBehaviour
             name = nameText != null ? nameText.text : ""
         };
         animalDataList.Add(newAnimal);
+
+        // Mostrar notificación
+        NotificationManager.Instance.ShowNotification("Animal añadido!");
+
         // Cada vez que se añade un animal, se actualiza el panel de datos
         GameObject entry;
         if (level != 1)
             entry = Instantiate(dataEntry, dataPanel.transform);
         else
             entry = Instantiate(dataEntryLevel1, dataPanel.transform);
+
+
         entry.GetComponent<DataEntry>().Initialize(newAnimal);
         Debug.Log(animalDataList.Count);
     }
@@ -57,33 +72,5 @@ public class AnimalDataManager : MonoBehaviour
     public void RemoveAnimal(AnimalData animal)
     {
         animalDataList.Remove(animal);
-    }
-
-    // Campos para visualizar el panel de datos
-    [SerializeField] private GameObject dataEntry;
-    [SerializeField] private GameObject dataEntryLevel1;
-
-    [SerializeField] private GameObject dataPanel;
-
-    public void ShowDataPanel()
-    {
-        foreach (Transform child in dataPanel.transform)
-        {
-            Destroy(child.gameObject);
-        }
-        GameObject entryPrefab = null;
-        if (level == 1)
-        {
-            entryPrefab = dataEntryLevel1;
-        }
-        else
-        {
-            entryPrefab = dataEntryLevel1;
-        }
-        foreach (var animal in animalDataList)
-        {
-            GameObject entry = Instantiate(entryPrefab, dataPanel.transform);
-            entry.GetComponent<DataEntry>().Initialize(animal);
-        }
     }
 }
