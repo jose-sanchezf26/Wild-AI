@@ -26,6 +26,9 @@ public class AnimalDataManager : MonoBehaviour
     [SerializeField] private GameObject dataEntryLevel1;
     [SerializeField] private GameObject dataPanel;
 
+    // Campo para el objetivo del primer nivel
+    [SerializeField] private Objective registerObjective;
+
     private void Awake()
     {
         // Aplicamos el patrón Singleton
@@ -56,6 +59,7 @@ public class AnimalDataManager : MonoBehaviour
 
         // Mostrar notificación
         NotificationManager.Instance.ShowNotification("Animal añadido!");
+        registerObjective.UpgradeProgress(1); // Actualizar el progreso del objetivo
 
         // Cada vez que se añade un animal, se actualiza el panel de datos
         GameObject entry;
