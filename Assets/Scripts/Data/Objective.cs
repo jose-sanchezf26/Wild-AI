@@ -18,17 +18,14 @@ public class Objective : MonoBehaviour
     public ObjectiveType objectiveType;
     public bool isCompleted;
     public int scoreToAchieve;
-    public int scoreAchieved; 
-    public GameObject uiPrefab;
-    public GameObject uiParent;
+    public int scoreAchieved;
     private GameObject uiObject;
     private GameObject tick;
-    void Start()
+
+    public void Initialize(GameObject uiPrefab, GameObject uiParent)
     {
-        isCompleted = false;
-        scoreAchieved = 0;
-        uiObject = Instantiate(uiPrefab, uiParent.transform); 
-        uiObject.GetComponentInChildren<TextMeshProUGUI>().text = $"{description} ({scoreAchieved}/{scoreToAchieve})"; 
+        uiObject = Instantiate(uiPrefab, uiParent.transform);
+        UpdateText();
         tick = uiObject.transform.Find("Image/Tick").gameObject;
         tick.SetActive(false);
     }
@@ -37,12 +34,24 @@ public class Objective : MonoBehaviour
     {
         // Se suma el score y se actualiza la cadena
         scoreAchieved += score;
-        uiObject.GetComponentInChildren<TextMeshProUGUI>().text = $"{description} ({scoreAchieved}/{scoreToAchieve})"; 
+        UpdateText();
 
         if (scoreAchieved >= scoreToAchieve)
         {
             isCompleted = true;
             tick.SetActive(true);
+        }
+    }
+
+    private void UpdateText()
+    {
+        if (objectiveType == ObjectiveType.CompleteTask)
+        {
+            uiObject.GetComponentInChildren<TextMeshProUGUI>().text = $"{description}";
+        }
+        else if (objectiveType == ObjectiveType.AchieveScore)
+        {
+            uiObject.GetComponentInChildren<TextMeshProUGUI>().text = $"{description} ({scoreAchieved}/{scoreToAchieve})";
         }
     }
 

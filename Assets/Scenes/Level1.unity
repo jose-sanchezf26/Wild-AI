@@ -21674,8 +21674,6 @@ MonoBehaviour:
   isCompleted: 0
   scoreToAchieve: 5
   scoreAchieved: 0
-  uiPrefab: {fileID: 5306916705378124573, guid: f5f0950a0b08c054faf868bc2bad8588, type: 3}
-  uiParent: {fileID: 1472756424}
 --- !u!1 &1121292313
 GameObject:
   m_ObjectHideFlags: 0
@@ -24185,6 +24183,7 @@ GameObject:
   - component: {fileID: 1472756427}
   - component: {fileID: 1472756426}
   - component: {fileID: 1472756425}
+  - component: {fileID: 1472756429}
   m_Layer: 5
   m_Name: ObjectivesPanel
   m_TagString: Untagged
@@ -24211,7 +24210,7 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
@@ -24273,9 +24272,23 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -751.4651, y: 292.12915}
-  m_SizeDelta: {x: 363.4641, y: 201.7418}
+  m_AnchoredPosition: {x: -751.4651, y: 300.04755}
+  m_SizeDelta: {x: 363.4641, y: 208.2578}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1472756429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472756424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7f2871939b4d6469b3c348f802f8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiPrefab: {fileID: 5306916705378124573, guid: f5f0950a0b08c054faf868bc2bad8588, type: 3}
+  uiParent: {fileID: 1472756424}
 --- !u!1 &1496355784
 GameObject:
   m_ObjectHideFlags: 0
@@ -24715,6 +24728,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564184745}
   m_CullTransparentMesh: 1
+--- !u!1 &1587861787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1587861788}
+  - component: {fileID: 1587861789}
+  m_Layer: 0
+  m_Name: Objective (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1587861788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587861787}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1678763986}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1587861789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587861787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c3e520f1394ac4fbd34cc000e19f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectiveName: Crear un modelo
+  description: Crea y prueba un primer modelo
+  objectiveType: 0
+  isCompleted: 0
+  scoreToAchieve: 1
+  scoreAchieved: 0
 --- !u!1 &1594704704
 GameObject:
   m_ObjectHideFlags: 0
@@ -25100,6 +25163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1678763986}
+  - component: {fileID: 1678763987}
   m_Layer: 0
   m_Name: Objectives
   m_TagString: Untagged
@@ -25121,8 +25185,24 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1119311360}
+  - {fileID: 1587861788}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1678763987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678763985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4debd95d99162394c84ca79feb2fc101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectives:
+  - {fileID: 1119311361}
+  - {fileID: 1587861789}
 --- !u!1 &1685759482
 GameObject:
   m_ObjectHideFlags: 0
@@ -27632,10 +27712,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1472756428}
     m_Modifications:
-    - target: {fileID: 1707613822153906346, guid: f5f0950a0b08c054faf868bc2bad8588, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3391426082327054026, guid: f5f0950a0b08c054faf868bc2bad8588, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -27643,10 +27719,6 @@ PrefabInstance:
     - target: {fileID: 3391426082327054026, guid: f5f0950a0b08c054faf868bc2bad8588, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391426082327054026, guid: f5f0950a0b08c054faf868bc2bad8588, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 74.5496
       objectReference: {fileID: 0}
     - target: {fileID: 3391426082327054026, guid: f5f0950a0b08c054faf868bc2bad8588, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -27686,7 +27758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4444938498834818255, guid: f5f0950a0b08c054faf868bc2bad8588, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 69.2299
+      value: 64.1695
       objectReference: {fileID: 0}
     - target: {fileID: 4444938498834818255, guid: f5f0950a0b08c054faf868bc2bad8588, type: 3}
       propertyPath: m_LocalPosition.x

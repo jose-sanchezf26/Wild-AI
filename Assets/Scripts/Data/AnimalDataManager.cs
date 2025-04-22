@@ -59,7 +59,8 @@ public class AnimalDataManager : MonoBehaviour
 
         // Mostrar notificación
         NotificationManager.Instance.ShowNotification("Animal añadido!");
-        registerObjective.UpgradeProgress(1); // Actualizar el progreso del objetivo
+        
+        if (registerObjective != null) registerObjective.UpgradeProgress(1); // Actualizar el progreso del objetivo
 
         // Cada vez que se añade un animal, se actualiza el panel de datos
         GameObject entry;
