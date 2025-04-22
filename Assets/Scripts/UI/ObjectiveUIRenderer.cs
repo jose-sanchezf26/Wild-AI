@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class ObjectiveUIRendererr : MonoBehaviour
+public class ObjectiveUIRenderer : MonoBehaviour
 {
     public GameObject uiPrefab;
     public GameObject uiParent;
 
-    void Start()
+    public void RenderObjectives()
     {
         foreach (Objective objective in ObjectiveManager.Instance.objectives)
         {

@@ -14,6 +14,7 @@ public class ModelCreator : MonoBehaviour
     public int level;
     private string createModelFileName;
     private string testModelFileName;
+    private bool modelCreated = false;
 
     void Start()
     {
@@ -24,6 +25,8 @@ public class ModelCreator : MonoBehaviour
     {
         ExportAnimalData();
         ExecutePythonFile(createModelFileName);
+        modelCreated = true;
+
     }
 
     private void ExportAnimalData(string fileName = "animal_data.csv")
@@ -117,7 +120,10 @@ public class ModelCreator : MonoBehaviour
     {
         Time.timeScale = 1f; 
         // Cambia a la escena de prueba
-        UnityEngine.SceneManagement.SceneManager.LoadScene("TestLevel1");
+        if (modelCreated)
+            UnityEngine.SceneManagement.SceneManager.LoadScene("TestLevel1");
+        else
+            NotificationManager.Instance.ShowNotification("¡Primero crea el modelo!");
     }
 
     public void TestModel()
@@ -159,6 +165,7 @@ public class ModelCreator : MonoBehaviour
             predictionText.text = predictedWeight.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
             float realWeight = float.Parse(weightInput.text);
             errorText.text = Mathf.Abs(realWeight - predictedWeight).ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+            ObjectiveManager.Instance.AddScoreToObjective("Create model", 1); 
 
             UnityEngine.Debug.Log("Width: " + width);
             UnityEngine.Debug.Log("Height: " + height);

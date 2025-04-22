@@ -25200,9 +25200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4debd95d99162394c84ca79feb2fc101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectives:
-  - {fileID: 1119311361}
-  - {fileID: 1587861789}
+  objectives: []
+  level: 1
 --- !u!1 &1685759482
 GameObject:
   m_ObjectHideFlags: 0
