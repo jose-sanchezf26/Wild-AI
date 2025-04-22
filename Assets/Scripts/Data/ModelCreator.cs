@@ -54,21 +54,6 @@ public class ModelCreator : MonoBehaviour
         UnityEngine.Debug.Log($"CSV exportado correctamente en: {filePath}");
     }
 
-    // private void ExecutePythonFile(string fileName)
-    // {
-    //     // Crea un proceso de Python
-    //     ProcessStartInfo startInfo = new ProcessStartInfo();
-
-    //     // Establece el ejecutable de Python y pasa la ruta del script
-    //     startInfo.FileName = "python3"; // Si estás en Windows, puede ser "python" o "python3"
-    //     string folderPath = Path.Combine(Application.dataPath, "Python/Scripts");
-    //     startInfo.Arguments = Path.Combine(folderPath, fileName);
-
-    //     // Ejecuta el proceso
-    //     Process process = Process.Start(startInfo);
-    //     process.WaitForExit(); // Espera hasta que el proceso termine
-    // }
-
     private void ExecutePythonFile(string fileName)
     {
         try
@@ -118,13 +103,31 @@ public class ModelCreator : MonoBehaviour
 
     public void GoToTestScene()
     {
-        Time.timeScale = 1f; 
+        Time.timeScale = 1f;
         // Cambia a la escena de prueba
         if (modelCreated)
-            UnityEngine.SceneManagement.SceneManager.LoadScene("TestLevel1");
+        {
+            string sceneName = "TestLevel" + level.ToString();
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+        }
         else
             NotificationManager.Instance.ShowNotification("¡Primero crea el modelo!");
     }
+
+    private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+    {
+        // Cuando la escena termine de cargar, renderiza los objetivos
+        var renderer = FindFirstObjectByType<ObjectiveUIRenderer>();
+        if (renderer != null)
+        {
+            renderer.RenderObjectives();
+            UnityEngine.Debug.Log("Objetivos renderizados");
+        }
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private Queue<float> errorHistory = new Queue<float>();
 
     public void TestModel()
     {
@@ -165,11 +168,37 @@ public class ModelCreator : MonoBehaviour
             predictionText.text = predictedWeight.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
             float realWeight = float.Parse(weightInput.text);
             errorText.text = Mathf.Abs(realWeight - predictedWeight).ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
-            ObjectiveManager.Instance.AddScoreToObjective("Create model", 1); 
+            ObjectiveManager.Instance.AddScoreToObjective("Create model", 1);
+            ProcessErrorHistory(realWeight, predictedWeight);
 
             UnityEngine.Debug.Log("Width: " + width);
             UnityEngine.Debug.Log("Height: " + height);
             UnityEngine.Debug.Log("Predicted Weight: " + predictedWeight);
+        }
+    }
+
+    private int maxHistorySize = 5; // Tamaño máximo de la historia de errores
+
+    private void ProcessErrorHistory(float realWeight, float predictedWeight)
+    {
+        float absoluteError = Mathf.Abs(realWeight - predictedWeight);
+        float percentageError = (absoluteError / realWeight) * 100f;
+
+        if (errorHistory.Count >= maxHistorySize)
+        {
+            errorHistory.Dequeue();
+        }
+        errorHistory.Enqueue(percentageError);
+        if (errorHistory.Count == maxHistorySize)
+        {
+            float averageError = 0f;
+            foreach (float error in errorHistory)
+            {
+                averageError += error;
+            }
+            averageError /= errorHistory.Count;
+            ObjectiveManager.Instance.AddScoreToObjective("Reach Error", averageError);
+            NotificationManager.Instance.ShowNotification("Error promedio: " + averageError.ToString("F2") + "%");
         }
     }
 

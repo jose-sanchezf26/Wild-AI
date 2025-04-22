@@ -7,18 +7,11 @@ public class ObjectiveManager : MonoBehaviour
 {
     public static ObjectiveManager Instance { get; private set; }
 
-    public List<LevelObjectives> allLevelObjectives;
+    public static List<LevelObjectives> allLevelObjectives;
 
-    [SerializeField] public List<Objective> objectives;
+    public static List<Objective> objectives;
     public int level;
 
-    void Start()
-    {
-        InitializeAllLevelObjectives();
-        LoadObjectivesForLevel(1);
-        FindFirstObjectByType<ObjectiveUIRenderer>().RenderObjectives();
-
-    }
 
     void Awake()
     {
@@ -30,6 +23,7 @@ public class ObjectiveManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        InitializeAllLevelObjectives();
     }
 
     public void LoadObjectivesForLevel(int levelN)
@@ -37,9 +31,10 @@ public class ObjectiveManager : MonoBehaviour
         this.level = levelN;
         var level = allLevelObjectives.Find(l => l.level == levelN);
         objectives = level.objectives;
+        Debug.Log("Cargando objetivos del nivel " + objectives.Count);
     }
 
-    public void InitializeAllLevelObjectives()
+    public static void InitializeAllLevelObjectives()
     {
         allLevelObjectives = new List<LevelObjectives>();
 
@@ -62,6 +57,13 @@ public class ObjectiveManager : MonoBehaviour
                 description = "Crea y prueba un primer modelo",
                 objectiveType = ObjectiveType.CompleteTask,
                 scoreToAchieve = 1
+            },
+            new Objective
+            {
+                objectiveName = "Reach Error",
+                description = "Consigue un modelo con un error menor del 30% en cinco pruebas",
+                objectiveType = ObjectiveType.DecreaseValue,
+                scoreToAchieve = 30
             }
         }
         };
@@ -69,7 +71,7 @@ public class ObjectiveManager : MonoBehaviour
         allLevelObjectives.Add(nivel1);
     }
 
-    public void AddScoreToObjective(string name, int amount)
+    public void AddScoreToObjective(string name, float amount)
     {
         foreach (var obj in objectives)
         {

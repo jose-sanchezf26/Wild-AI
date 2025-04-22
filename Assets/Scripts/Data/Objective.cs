@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public enum ObjectiveType
 {
     CompleteTask,
-    AchieveScore
+    AchieveScore,
+    DecreaseValue
 }
 
 
@@ -17,8 +18,8 @@ public class Objective : MonoBehaviour
     public string description;
     public ObjectiveType objectiveType;
     public bool isCompleted;
-    public int scoreToAchieve;
-    public int scoreAchieved;
+    public float scoreToAchieve;
+    public float scoreAchieved;
     private GameObject uiObject;
     private GameObject tick;
 
@@ -27,19 +28,31 @@ public class Objective : MonoBehaviour
         uiObject = Instantiate(uiPrefab, uiParent.transform);
         UpdateText();
         tick = uiObject.transform.Find("Image/Tick").gameObject;
-        tick.SetActive(false);
+        tick.SetActive(isCompleted);
     }
 
-    public void UpgradeProgress(int score)
+    public void UpgradeProgress(float score)
     {
         // Se suma el score y se actualiza la cadena
-        scoreAchieved += score;
-        UpdateText();
-
-        if (scoreAchieved >= scoreToAchieve)
+        if (objectiveType == ObjectiveType.AchieveScore || objectiveType == ObjectiveType.CompleteTask)
         {
-            isCompleted = true;
-            tick.SetActive(true);
+            scoreAchieved += score;
+            if (scoreAchieved >= scoreToAchieve)
+            {
+                isCompleted = true;
+                tick.SetActive(true);
+            }
+            UpdateText();
+        }
+        if (objectiveType == ObjectiveType.DecreaseValue)
+        {
+            scoreAchieved = score;
+            if (scoreAchieved <= scoreToAchieve)
+            {
+                isCompleted = true;
+                tick.SetActive(true);
+            }
+            UpdateText();
         }
     }
 
@@ -49,9 +62,13 @@ public class Objective : MonoBehaviour
         {
             uiObject.GetComponentInChildren<TextMeshProUGUI>().text = $"{description}";
         }
-        else if (objectiveType == ObjectiveType.AchieveScore)
+        if (objectiveType == ObjectiveType.AchieveScore)
         {
-            uiObject.GetComponentInChildren<TextMeshProUGUI>().text = $"{description} ({scoreAchieved}/{scoreToAchieve})";
+            uiObject.GetComponentInChildren<TextMeshProUGUI>().text = $"{description} ({(int)scoreAchieved}/{(int)scoreToAchieve})";
+        }
+        if (objectiveType == ObjectiveType.DecreaseValue)
+        {
+            uiObject.GetComponentInChildren<TextMeshProUGUI>().text = $"{description} ({scoreAchieved:F2}/{scoreToAchieve:F2})";
         }
     }
 

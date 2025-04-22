@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WindowsManager : MonoBehaviour
 {
@@ -6,81 +8,13 @@ public class WindowsManager : MonoBehaviour
     public GameObject preprocessingWindow;
     public GameObject dataWindow;
     public GameObject modelCreationWindow;
+    public GameObject objectivesWindow;
+    public List<GameObject> windowsList;
     public GameObject animalImage;
     public Ruler ruler;
     public WeightScale weightScale;
     public GameObject animalNumber;
     private bool onModelCreation = false;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    // void Update()
-    // {
-    //     // Activa el panel de registro de un animal
-    //     if (Input.GetKeyDown(KeyCode.R))
-    //     {
-    //         if (!registerWindow.activeSelf)
-    //         {
-    //             Time.timeScale = 0f;
-    //             ruler.RestartPosition();
-    //             weightScale.RestartPosition();
-    //         }
-    //         else
-    //         {
-    //             Time.timeScale = 1f;
-    //             animalImage.SetActive(false);
-    //             animalNumber.SetActive(false);
-    //         }
-    //         modelCreationWindow.SetActive(false);
-    //         preprocessingWindow.SetActive(false);
-    //         dataWindow.SetActive(false);
-    //         registerWindow.SetActive(!registerWindow.activeSelf);
-    //     }
-
-    //     // Activa el panel de datos
-    //     if (Input.GetKeyDown(KeyCode.D))
-    //     {
-    //         if (!dataWindow.activeSelf)
-    //             Time.timeScale = 0f;
-    //         else
-    //             Time.timeScale = 1f;
-    //         registerWindow.SetActive(false);
-    //         modelCreationWindow.SetActive(false);
-    //         preprocessingWindow.SetActive(false);
-    //         dataWindow.SetActive(!dataWindow.activeSelf);
-    //     }
-
-    //     // Activa el panel de preprocesamiento
-    //     if (Input.GetKeyDown(KeyCode.P))
-    //     {
-    //         if (!preprocessingWindow.activeSelf)
-    //             Time.timeScale = 0f;
-    //         else
-    //             Time.timeScale = 1f;
-    //         registerWindow.SetActive(false);
-    //         dataWindow.SetActive(false);
-    //         modelCreationWindow.SetActive(false);
-    //         preprocessingWindow.SetActive(!preprocessingWindow.activeSelf);
-    //     }
-
-    //     // Activa el panel de creación de modelo
-    //     if (Input.GetKeyDown(KeyCode.C))
-    //     {
-    //         if (!modelCreationWindow.activeSelf)
-    //             Time.timeScale = 0f;
-    //         else
-    //             Time.timeScale = 1f;
-    //         registerWindow.SetActive(false);
-    //         dataWindow.SetActive(false);
-    //         preprocessingWindow.SetActive(false);
-    //         modelCreationWindow.SetActive(!modelCreationWindow.activeSelf);
-    //     }
-    // }
 
     void Update()
     {
@@ -101,10 +35,7 @@ public class WindowsManager : MonoBehaviour
                     if (animalImage != null) animalImage.SetActive(false);
                     if (animalNumber != null) animalNumber.SetActive(false);
                 }
-                if (modelCreationWindow != null) modelCreationWindow.SetActive(false);
-                if (preprocessingWindow != null) preprocessingWindow.SetActive(false);
-                if (dataWindow != null) dataWindow.SetActive(false);
-                registerWindow.SetActive(!registerWindow.activeSelf);
+                CloseWindowsExcept(registerWindow);
             }
         }
 
@@ -118,10 +49,7 @@ public class WindowsManager : MonoBehaviour
                 else
                     Time.timeScale = 1f;
 
-                if (registerWindow != null) registerWindow.SetActive(false);
-                if (modelCreationWindow != null) modelCreationWindow.SetActive(false);
-                if (preprocessingWindow != null) preprocessingWindow.SetActive(false);
-                dataWindow.SetActive(!dataWindow.activeSelf);
+                CloseWindowsExcept(dataWindow);
             }
         }
 
@@ -135,10 +63,7 @@ public class WindowsManager : MonoBehaviour
                 else
                     Time.timeScale = 1f;
 
-                if (registerWindow != null) registerWindow.SetActive(false);
-                if (dataWindow != null) dataWindow.SetActive(false);
-                if (modelCreationWindow != null) modelCreationWindow.SetActive(false);
-                preprocessingWindow.SetActive(!preprocessingWindow.activeSelf);
+                CloseWindowsExcept(preprocessingWindow);
             }
         }
 
@@ -152,11 +77,28 @@ public class WindowsManager : MonoBehaviour
                 else
                     Time.timeScale = 1f;
 
-                if (registerWindow != null) registerWindow.SetActive(false);
-                if (dataWindow != null) dataWindow.SetActive(false);
-                if (preprocessingWindow != null) preprocessingWindow.SetActive(false);
-                modelCreationWindow.SetActive(!modelCreationWindow.activeSelf);
+                CloseWindowsExcept(modelCreationWindow);
             }
+        }
+
+        // Abrir panel de objetivos
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            if (objectivesWindow != null)
+            {
+                CloseWindowsExcept(objectivesWindow);
+            }
+        }
+    }
+
+    private void CloseWindowsExcept(GameObject activeWindow)
+    {
+        foreach (GameObject window in windowsList)
+        {
+            if (window != activeWindow)
+                window.SetActive(false);
+            else
+                window.SetActive(!window.activeSelf);
         }
     }
 
@@ -166,4 +108,30 @@ public class WindowsManager : MonoBehaviour
         preprocessingWindow.SetActive(false);
         onModelCreation = false;
     }
+
+    public int level = 0;
+
+    public void OpenLevel(int level)
+    {
+        this.level = level;
+        string sceneName = "Level" + level.ToString();
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.LoadScene(sceneName);
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Cuando la escena termine de cargar, renderiza los objetivos
+        ObjectiveManager.Instance.LoadObjectivesForLevel(level);
+        var renderer = FindFirstObjectByType<ObjectiveUIRenderer>();
+        if (renderer != null)
+        {
+            renderer.RenderObjectives();
+            Debug.Log("Objetivos renderizados");
+        }
+
+        // Importante: desuscribirse para evitar llamadas duplicadas
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    
 }
