@@ -43,7 +43,7 @@ public class Animal : MonoBehaviour
         height = Random.Range(heightRange.x, heightRange.y);
         width = Random.Range(widthRange.x, widthRange.y);
         weight = Random.Range(weightRange.x, weightRange.y);
-        transform.localScale = new Vector3(width*multiplier, height*multiplier, 1);
+        // transform.localScale = new Vector3(width*multiplier, height*multiplier, 1);
 
         if (possibleColors.Length > 0)
         {

@@ -22,6 +22,8 @@ public class Explore : MonoBehaviour
         moveSpeed = s;
     }
 
+    public Animator animator;
+
     void Update()
     {
         if (active)
@@ -34,6 +36,8 @@ public class Explore : MonoBehaviour
 
             // Actualiza el temporizador
             timer += Time.deltaTime;
+
+            animator.SetFloat("Speed", currentDirection.magnitude*moveSpeed);
 
             // Cambia de dirección en el intervalo especificado
             if (timer >= changeDirectionInterval)
