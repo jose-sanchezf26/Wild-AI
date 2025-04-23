@@ -211,6 +211,10 @@ MonoBehaviour:
   changeDirectionInterval: 2
   directionSmoothing: 0.5
   active: 1
+  minDurationIdle: 2
+  maxDurationIdle: 10
+  minDurationRun: 2
+  maxDurationRun: 10
   animator: {fileID: -6063037558787279843}
 --- !u!114 &-3058000906660615396
 MonoBehaviour:
