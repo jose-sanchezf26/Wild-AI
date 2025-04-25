@@ -554,7 +554,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1624641422}
+      - m_Target: {fileID: 1746331177}
         m_TargetAssemblyTypeName: WindowsManager, Assembly-CSharp
         m_MethodName: OpenLevel
         m_Mode: 3
@@ -715,7 +715,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1624641423}
-  - component: {fileID: 1624641422}
   - component: {fileID: 1624641424}
   m_Layer: 0
   m_Name: GameManager
@@ -724,28 +723,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1624641422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624641421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97d09b9f75abc42418ae122fb3f696b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  registerWindow: {fileID: 0}
-  preprocessingWindow: {fileID: 0}
-  dataWindow: {fileID: 0}
-  modelCreationWindow: {fileID: 0}
-  objectivesWindow: {fileID: 0}
-  windowsList: []
-  animalImage: {fileID: 0}
-  ruler: {fileID: 0}
-  weightScale: {fileID: 0}
-  animalNumber: {fileID: 0}
 --- !u!4 &1624641423
 Transform:
   m_ObjectHideFlags: 0
@@ -773,8 +750,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4debd95d99162394c84ca79feb2fc101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectives: []
   level: 0
+--- !u!1 &1746331176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1746331178}
+  - component: {fileID: 1746331177}
+  m_Layer: 0
+  m_Name: WindowsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1746331177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746331176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d09b9f75abc42418ae122fb3f696b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  registerWindow: {fileID: 0}
+  preprocessingWindow: {fileID: 0}
+  dataWindow: {fileID: 0}
+  modelCreationWindow: {fileID: 0}
+  objectivesWindow: {fileID: 0}
+  windowsList: []
+  animalImage: {fileID: 0}
+  ruler: {fileID: 0}
+  weightScale: {fileID: 0}
+  animalNumber: {fileID: 0}
+  level: 1
+--- !u!4 &1746331178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746331176}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1511.7014, y: 598.61206, z: -5.688672}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -783,3 +814,4 @@ SceneRoots:
   - {fileID: 1499749249}
   - {fileID: 1271901403}
   - {fileID: 1624641423}
+  - {fileID: 1746331178}

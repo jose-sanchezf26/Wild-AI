@@ -37,7 +37,7 @@ public class ModelCreator : MonoBehaviour
         csvContent.AppendLine("Weight,Height,Width");
 
         // Contenido
-        foreach (var animal in AnimalDataManager.Instance.animalDataList)
+        foreach (var animal in AnimalDataSingleton.Instance.animalDataList)
         {
             string width = animal.width.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
             string height = animal.height.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);

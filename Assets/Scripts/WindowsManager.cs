@@ -119,6 +119,29 @@ public class WindowsManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void OpenLevelFromTest(int level)
+    {
+        this.level = level;
+        string sceneName = "Level" + level.ToString();
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.LoadScene(sceneName);
+        // AnimalDataManager.Instance.LoadAnimalList();
+    }
+
+    public void OpenLevelSelection()
+    {
+        string sceneName = "LevelSelection";
+        ObjectiveManager.InitializeAllLevelObjectives();
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void OpenTrainScene(int level)
+    {
+        string sceneName = "TestLevel" + level.ToString();
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.LoadScene(sceneName);
+    }
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // Cuando la escena termine de cargar, renderiza los objetivos
@@ -133,5 +156,5 @@ public class WindowsManager : MonoBehaviour
         // Importante: desuscribirse para evitar llamadas duplicadas
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
-    
+
 }

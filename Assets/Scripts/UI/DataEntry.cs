@@ -8,7 +8,7 @@ public class DataEntry : MonoBehaviour
 
     public void Destroy()
     {
-        AnimalDataManager.Instance.RemoveAnimal(animal);
+        AnimalDataSingleton.Instance.RemoveAnimal(animal);
         Destroy(gameObject);
     }
 

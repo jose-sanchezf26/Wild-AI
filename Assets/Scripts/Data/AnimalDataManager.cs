@@ -5,14 +5,8 @@ using UnityEngine;
 
 public class AnimalDataManager : MonoBehaviour
 {
-    // Lo hacemos Singleton
-    public static AnimalDataManager Instance { get; private set; }
-
     // Nivel
     public int level;
-
-    // Lista de datos de animales
-    public List<AnimalData> animalDataList;
 
     // Campos para registrar un animal
     [SerializeField] private TMP_InputField widthText;
@@ -23,25 +17,14 @@ public class AnimalDataManager : MonoBehaviour
 
     // Campos para visualizar el panel de datos
     [SerializeField] private GameObject dataEntry;
-    [SerializeField] private GameObject dataEntryLevel1;
     [SerializeField] private GameObject dataPanel;
 
     // Campo para el objetivo del primer nivel
     [SerializeField] private Objective registerObjective;
 
-    private void Awake()
+    void Start()
     {
-        // Aplicamos el patrón Singleton
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // Mantener al cambiar de escena
-        }
-        else
-        {
-            Destroy(gameObject); // Evitar duplicados
-        }
-        animalDataList = new List<AnimalData>();
+        LoadAnimalList();
     }
 
     public void AddAnimal()
@@ -55,27 +38,37 @@ public class AnimalDataManager : MonoBehaviour
             color = colorDropdown != null ? colorDropdown.options[colorDropdown.value].text : "",
             name = nameText != null ? nameText.text : ""
         };
-        animalDataList.Add(newAnimal);
+        AnimalDataSingleton.Instance.AddAnimal(newAnimal);
 
         // Mostrar notificación
         NotificationManager.Instance.ShowNotification("Animal añadido!");
 
-        ObjectiveManager.Instance.AddScoreToObjective("Register animals", 1); // Actualizar el progreso del objetivo
+        // Actualizar el progreso del objetivo del primer nivel
+        ObjectiveManager.Instance.AddScoreToObjective("Register animals", 1);
 
-        // Cada vez que se añade un animal, se actualiza el panel de datos
+        // Añade el animal al panel
+        AddAnimalToPanel(newAnimal);
+    }
+
+    public void AddAnimalToPanel(AnimalData animal)
+    {
         GameObject entry;
-        if (level != 1)
-            entry = Instantiate(dataEntry, dataPanel.transform);
-        else
-            entry = Instantiate(dataEntryLevel1, dataPanel.transform);
+        entry = Instantiate(dataEntry, dataPanel.transform);
 
+        entry.GetComponent<DataEntry>().Initialize(animal);
+        Debug.Log(AnimalDataSingleton.Instance.animalDataList.Count);
+    }
 
-        entry.GetComponent<DataEntry>().Initialize(newAnimal);
-        Debug.Log(animalDataList.Count);
+    public void LoadAnimalList()
+    {
+        foreach (AnimalData animal in AnimalDataSingleton.Instance.animalDataList)
+        {
+            AddAnimalToPanel(animal);
+        }
     }
 
     public void RemoveAnimal(AnimalData animal)
     {
-        animalDataList.Remove(animal);
+        AnimalDataSingleton.Instance.RemoveAnimal(animal);
     }
 }
