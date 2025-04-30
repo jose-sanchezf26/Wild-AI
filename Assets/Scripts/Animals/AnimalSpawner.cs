@@ -6,6 +6,7 @@ public class AnimalSpawnInfo
 {
     public GameObject prefab;
     public int quantity;
+    public float noisePercentage = 0.2f; // Porcentaje de ruido para la variación
 }
 
 public class AnimalSpawner : MonoBehaviour
@@ -26,7 +27,8 @@ public class AnimalSpawner : MonoBehaviour
             for (int i = 0; i < animal.quantity; i++)
             {
                 Vector3 spawnPosition = GetRandomPosition();
-                Instantiate(animal.prefab, spawnPosition, Quaternion.identity);
+                GameObject animalObj = Instantiate(animal.prefab, spawnPosition, Quaternion.identity);
+                animalObj.GetComponent<Animal>().CalculateWeight(animal.noisePercentage); // Calcula el peso del animal
             }
         }
     }

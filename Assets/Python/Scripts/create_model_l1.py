@@ -7,7 +7,7 @@ import joblib
 
 script_dir = os.path.dirname(__file__)
 
-csv_path = os.path.join(script_dir, '..', 'Data', 'animal_data_e.csv')
+csv_path = os.path.join(script_dir, '..', 'Data', 'animal_data.csv')
 
 data = pd.read_csv(csv_path)
 print(data.head())

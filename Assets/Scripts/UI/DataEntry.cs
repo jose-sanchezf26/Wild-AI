@@ -15,6 +15,7 @@ public class DataEntry : MonoBehaviour
     public void Initialize(AnimalData animal)
     {
         this.animal = animal;
+        transform.Find("ID").GetComponent<TextMeshProUGUI>().text = animal.id.ToString();
         transform.Find("Width").GetComponent<TextMeshProUGUI>().text = animal.width.ToString();
         transform.Find("Height").GetComponent<TextMeshProUGUI>().text = animal.height.ToString();
         transform.Find("Weight").GetComponent<TextMeshProUGUI>().text = animal.weight.ToString();

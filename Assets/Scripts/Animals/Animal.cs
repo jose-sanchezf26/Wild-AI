@@ -13,7 +13,7 @@ public class Animal : MonoBehaviour
     [Header("Random Variation Settings")]
     [SerializeField] private Vector2 heightRange = new Vector2(0.8f, 1.2f);
     [SerializeField] private Vector2 widthRange = new Vector2(0.8f, 1.2f);
-    [SerializeField] private Vector2 weightRange = new Vector2(0.8f, 1.2f);
+    [SerializeField] private float densityFactor = 250f; // Factor de densidad para el peso
     [SerializeField] private Color[] possibleColors;
     [SerializeField] private float multiplier = 1.0f;
 
@@ -42,14 +42,20 @@ public class Animal : MonoBehaviour
     {
         height = Random.Range(heightRange.x, heightRange.y);
         width = Random.Range(widthRange.x, widthRange.y);
-        weight = Random.Range(weightRange.x, weightRange.y);
-        // transform.localScale = new Vector3(width*multiplier, height*multiplier, 1);
 
         if (possibleColors.Length > 0)
         {
             color = possibleColors[Random.Range(0, possibleColors.Length)];
             spriteRenderer.color = color;
         }
+    }
+
+    public void CalculateWeight(float noisePercentage)
+    {
+        // Ahora calculamos el peso basado en las dimensiones y la densidad
+        float weightBase = height * width * densityFactor;
+        float noise = weightBase * Random.Range(-noisePercentage, noisePercentage);
+        weight = weightBase + noise;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -121,6 +127,7 @@ public class Animal : MonoBehaviour
 
 public class AnimalData
 {
+    public int id;
     public string name;
     public float weight;
     public float height;

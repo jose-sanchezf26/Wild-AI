@@ -10,6 +10,7 @@ public class AnimalDataSingleton : MonoBehaviour
 
     // Lista de datos de animales
     public List<AnimalData> animalDataList;
+    private int animalCount = 0;
 
 
     private void Awake()
@@ -31,6 +32,8 @@ public class AnimalDataSingleton : MonoBehaviour
 
     public void AddAnimal(AnimalData newAnimal)
     {
+        newAnimal.id = animalCount;
+        animalCount++;
         animalDataList.Add(newAnimal);
     }
 

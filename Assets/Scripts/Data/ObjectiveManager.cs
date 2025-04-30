@@ -63,13 +63,14 @@ public class ObjectiveManager : MonoBehaviour
                 objectiveName = "Reach Error",
                 description = "Consigue un modelo con un error menor del 30% en cinco pruebas",
                 objectiveType = ObjectiveType.DecreaseValue,
-                scoreToAchieve = 30
+                scoreToAchieve = 20
             }
         }
         };
 
         allLevelObjectives.Add(nivel1);
     }
+
 
     public void AddScoreToObjective(string name, float amount)
     {
@@ -78,8 +79,21 @@ public class ObjectiveManager : MonoBehaviour
             if (obj.objectiveName == name)
             {
                 obj.UpgradeProgress(amount);
+                CheckCompletedObjectives();
             }
         }
+    }
+
+    private void CheckCompletedObjectives()
+    {
+        foreach (var obj in objectives)
+        {
+            if (!obj.isCompleted)
+                return;
+        }
+        WindowsManager windowsManager = FindFirstObjectByType<WindowsManager>();
+        if (windowsManager != null)
+            windowsManager.OpenObjectivesCompletedPanel();
     }
 
 }

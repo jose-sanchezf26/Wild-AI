@@ -157,4 +157,19 @@ public class WindowsManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
+    public GameObject objectivesCompletedPanel;
+    public void OpenObjectivesCompletedPanel()
+    {
+        if (objectivesCompletedPanel != null)
+            objectivesCompletedPanel.SetActive(true);
+    }
+
+    public void CloseWindow(GameObject window)
+    {
+        if (window != null)
+        {
+            window.SetActive(false);
+        }
+    }
+
 }
