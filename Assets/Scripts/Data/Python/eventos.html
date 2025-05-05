@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Eventos de Survival Rules</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="eventos-de-survival-rules">Eventos de Survival Rules</h1>
+<table>
+<thead>
+<tr>
+<th>User</th>
+<th>Game ID</th>
+<th>Session ID</th>
+<th>Event Type</th>
+<th>Time</th>
+<th>Data</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-log_in</td>
+<td>17/02/2025 17:01:21</td>
+<td>{}</td>
+<td>Inicia sesión</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-log_out</td>
+<td>17/02/2025 17:18:20</td>
+<td>{}</td>
+<td>Cierra sesión</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-start_game</td>
+<td>17/02/2025 17:18:20</td>
+<td>{}</td>
+<td>Empieza una partida</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-end_game</td>
+<td>17/02/2025 17:20:20</td>
+<td>{}</td>
+<td>Termina una partida</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>a8110894-4a66-4309-bdc4-9e650d1b9bb8</td>
+<td>sr-save_sbr</td>
+<td>25/02/2025 09:03:36</td>
+<td>{&quot;fileName&quot;: &quot;ArchivoSBR.BE2&quot;, &quot;sbr&quot;: &quot;<Block>..</Block>&quot;}</td>
+<td>Guarda el sbr en un archivo</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>a8110894-4a66-4309-bdc4-9e650d1b9bb8</td>
+<td>sr-load_sbr</td>
+<td>25/02/2025 09:03:36</td>
+<td>{&quot;fileName&quot;: &quot;ArchivoSBR.BE2&quot;, &quot;sbr&quot;: &quot;<Block>..</Block>&quot;}</td>
+<td>Carga el sbr en un archivo</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-open_fb</td>
+<td>17/02/2025 17:24:21</td>
+<td>{}</td>
+<td>Abre la base de hechos</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-close_fb</td>
+<td>17/02/2025 17:01:43</td>
+<td>{}</td>
+<td>Cierra la base de hechos</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-open_kb</td>
+<td>17/02/2025 17:24:20</td>
+<td>{}</td>
+<td>Abre la base de conocimientos</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-open_s/l</td>
+<td>17/02/2025 17:24:25</td>
+<td>{}</td>
+<td>Abre el menú de guardar/cargar</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-close_s/l</td>
+<td>17/02/2025 17:24:50</td>
+<td>{}</td>
+<td>Cierra el menú de guardar/cargar</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-open_rules_log</td>
+<td>17/02/2025 17:24:19</td>
+<td>{}</td>
+<td>Abre el log de las reglas</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-open_inventory</td>
+<td>17/02/2025 17:24:16</td>
+<td>{}</td>
+<td>Abre el inventario</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-start_tutorial</td>
+<td>17/02/2025 17:28:09</td>
+<td>{}</td>
+<td>Empieza el tutorial</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>b3c33340-53bc-4d65-b237-9e61d3c31ec7</td>
+<td>sr-tutorial_next</td>
+<td>20/02/2025 12:07:48</td>
+<td>{&quot;windowName&quot;: &quot;Creación de reglas&quot;, &quot;stepsNumber&quot;: 4}</td>
+<td>Avanza a la siguiente ventana del tutorial</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-end_tutorial</td>
+<td>17/02/2025 17:28:22</td>
+<td>{}</td>
+<td>Termina el tutorial</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-create_block</td>
+<td>17/02/2025 17:29:18</td>
+<td>{&quot;blockType&quot;: &quot;WhenPlayClicked&quot;, &quot;blockId&quot;: &quot;84&quot;}</td>
+<td>Crea un bloque</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>e9308fad-8dd8-4d10-b252-d47d4c627dc3</td>
+<td>sr-delete_block</td>
+<td>22/02/2025 19:25:23</td>
+<td>{&quot;blockType&quot;: &quot;GetProperty&quot;, &quot;blockId&quot;: &quot;88&quot;, &quot;positionX&quot;: -67.530014, &quot;positionY&quot;: 25.0, &quot;parentBlockType&quot;: &quot;Sum&quot;, &quot;parentBlockId&quot;: &quot;84&quot;, &quot;parentRelation&quot;: &quot;input&quot;, &quot;positionInParent&quot;: &quot;2&quot;, &quot;sbr&quot;: &quot;<Block>...</Block>#&quot;}</td>
+<td>Elimina un bloque</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-drop_env</td>
+<td>17/02/2025 17:29:19</td>
+<td>{&quot;blockType&quot;: &quot;WhenPlayClicked&quot;, &quot;blockId&quot;: &quot;84&quot;, &quot;positionX&quot;: 209.94165, &quot;positionY&quot;: -275.427, &quot;sbr&quot;: &quot;<Block>...</Block>&quot;}</td>
+<td>Deja un bloque en el entorno</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>2c8852fd-9b43-4410-8734-48554fecf868</td>
+<td>sr-drop_stack</td>
+<td>22/02/2025 18:57:53</td>
+<td>{&quot;parentBlockType&quot;: &quot;WhenPlayClicked&quot;, &quot;parentBlockId&quot;: &quot;85&quot;, &quot;positionInParent&quot;: &quot;3&quot;, &quot;blockType&quot;: &quot;SetTarget&quot;, &quot;blockId&quot;: &quot;84&quot;, &quot;positionX&quot;: 0.0, &quot;positionY&quot;: -130.0, &quot;sbr&quot;: &quot;<Block>...</Block>&quot;}</td>
+<td>Deja un bloque en el body de otro</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>2c8852fd-9b43-4410-8734-48554fecf868</td>
+<td>sr-drop_input</td>
+<td>22/02/2025 18:59:12</td>
+<td>{&quot;parentBlockType&quot;: &quot;RuleWithID&quot;, &quot;parentBlockId&quot;: &quot;88&quot;, &quot;positionInParent&quot;: &quot;2&quot;, &quot;blockType&quot;: &quot;GetProperty&quot;, &quot;blockId&quot;: &quot;90&quot;, &quot;positionX&quot;: -9.00999451, &quot;positionY&quot;: 30.0, &quot;sbr&quot;: &quot;<Block>...</Block>&quot;}</td>
+<td>Deja un bloque de entrada en el entorno con múltiples bloques hijos</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-select_f_env</td>
+<td>17/02/2025 17:39:45</td>
+<td>{&quot;blockType&quot;: &quot;Explore&quot;, &quot;blockId&quot;: &quot;85&quot;, &quot;positionX&quot;: -82.62988, &quot;positionY&quot;: 44.09955}</td>
+<td>Selecciona un bloque que estaba en el entorno</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>2c8852fd-9b43-4410-8734-48554fecf868</td>
+<td>sr-select_f_stack</td>
+<td>22/02/2025 18:50:22</td>
+<td>{&quot;parentBlockType&quot;: &quot;WhenPlayClicked&quot;, &quot;parentBlockId&quot;: &quot;85&quot;, &quot;positionInParent&quot;: &quot;2&quot;, &quot;blockType&quot;: &quot;SetTarget&quot;, &quot;blockId&quot;: &quot;84&quot;, &quot;positionX&quot;: -51.26229, &quot;positionY&quot;: 51.8326874}</td>
+<td>Selecciona un bloque del body de otro</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>2c8852fd-9b43-4410-8734-48554fecf868</td>
+<td>sr-select_f_input</td>
+<td>22/02/2025 18:53:49</td>
+<td>{&quot;parentBlockType&quot;: &quot;RuleWithID&quot;, &quot;parentBlockId&quot;: &quot;88&quot;, &quot;positionInParent&quot;: &quot;2&quot;, &quot;blockType&quot;: &quot;GetProperty&quot;, &quot;blockId&quot;: &quot;90&quot;, &quot;positionX&quot;: -83.5153046, &quot;positionY&quot;: 33.135498}</td>
+<td>Selecciona un bloque del input de otro</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-pause</td>
+<td>17/02/2025 17:49:53</td>
+<td>{&quot;sbr&quot;: &quot;...&quot;}</td>
+<td>Pausa el juego y la ejecución de las reglas</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-play</td>
+<td>17/02/2025 17:49:54</td>
+<td>{&quot;sbr&quot;: &quot;...&quot;}</td>
+<td>Reanuda el juego y ejecuta las reglas de ese instante</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>13072935-16e3-4483-8f38-73d4e3ecf693</td>
+<td>sr-mod_speed</td>
+<td>17/02/2025 17:43:00</td>
+<td>{&quot;oldSpeed&quot;: &quot;x1&quot;, &quot;newSpeed&quot;: &quot;x2&quot;}</td>
+<td>Modifica la velocidad del juego a una dada</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>ce9a07a5-3a7c-42a8-9460-9941f286cd2e</td>
+<td>sr-open_context_menu</td>
+<td>20/02/2025 10:44:39</td>
+<td>{&quot;blockType&quot;: &quot;WhenPlayClicked&quot;, &quot;blockId&quot;: &quot;84&quot;, &quot;positionX&quot;: 215.9338, &quot;positionY&quot;: -293.42804}</td>
+<td>Abre el menú contextual de un bloque</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>e5d489e7-22c0-4113-bad6-db84ec77e1fd</td>
+<td>sr-close_context_menu</td>
+<td>20/02/2025 11:16:53</td>
+<td>{&quot;blockType&quot;: &quot;WhenPlayClicked&quot;, &quot;blockId&quot;: &quot;84&quot;, &quot;positionX&quot;: 349.798462, &quot;positionY&quot;: -398.607544}</td>
+<td>Cierra el menú contextual de un bloque</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>12b31741-88e5-41f5-b1c1-1e47b597dcfe</td>
+<td>sr-duplicate_block</td>
+<td>20/02/2025 11:28:49</td>
+<td>{&quot;blockType&quot;: &quot;WhenPlayClicked&quot;, &quot;blockDuplicatedId&quot;: &quot;84&quot;, &quot;newBlockId&quot;: &quot;86&quot;, &quot;positionX&quot;: 236.916565, &quot;positionY&quot;: -293.481445, &quot;sbr&quot;: &quot;...&quot;}</td>
+<td>Duplica un bloque en el entorno</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>2c8852fd-9b43-4410-8734-48554fecf868</td>
+<td>sr-select_input</td>
+<td>22/02/2025 18:48:29</td>
+<td>{&quot;blockType&quot;: &quot;SetTarget&quot;, &quot;blockId&quot;: 84, &quot;inputPosition&quot;: 1, &quot;textValue&quot;: &quot;hola&quot;}</td>
+<td>Selecciona el input de un bloque</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>2c8852fd-9b43-4410-8734-48554fecf868</td>
+<td>sr-deselect_input</td>
+<td>22/02/2025 18:48:31</td>
+<td>{&quot;blockType&quot;: &quot;SetTarget&quot;, &quot;blockId&quot;: 84, &quot;inputPosition&quot;: 1, &quot;textValue&quot;: &quot;adios&quot;}</td>
+<td>Deselecciona un input en un bloque</td>
+</tr>
+<tr>
+<td>Jose</td>
+<td>Survival Rules</td>
+<td>0a814f77-04ed-4a9f-ae72-2fe561f2ac9a</td>
+<td>sr-change_drop_down</td>
+<td>22/02/2025 20:06:26</td>
+<td>{&quot;blockType&quot;: &quot;DetectObject&quot;, &quot;blockId&quot;: 84, &quot;dropDownPosition&quot;: 1, &quot;oldValue&quot;: &quot;is&quot;, &quot;newValue&quot;: &quot;is not&quot;}</td>
+<td>Cambia una opción de un desplegable en &quot;DetectObject&quot;</td>
+</tr>
+</tbody>
+</table>
+<p>Cambios en la semana del 17/02/2025:</p>
+<ul>
+<li>
+<p>Interfaz:</p>
+<ul>
+<li>Cambio de color en el inventario</li>
+<li>Botón añadido al morir para guardar el sbr</li>
+<li>Botón de salir más accesible</li>
+<li>Iconos en los atributos del jugador</li>
+<li>Indicador de cuando el juego está pausado</li>
+</ul>
+</li>
+<li>
+<p>Eventos:</p>
+<ul>
+<li>Añadidos:
+<ul>
+<li>Abre el menú contextual de un bloque (sr-open_context_menu)</li>
+<li>Duplica un bloque (sr-duplicate_block)</li>
+<li>Cierra el menú contextual (sr-close_context_menu)</li>
+<li>Avanza de ventana dentro del tutorial (sr_tutorial_next)</li>
+<li>Selecciona un input de un bloque (sr-select_input)</li>
+<li>Deseleccona un input de un bloque (sr-deselect_input)</li>
+<li>Cambia el valor en un dropdown (sr-change_drop_down)</li>
+<li>Guarda el sbr en un archivo (sr-save_sbr)</li>
+<li>Carga el sbr de un archivo (sr-load_sbr)</li>
+<li>Abre el menú de guardar/cargar (sr-open_s/l)</li>
+<li>Cierra el menú de guardar/cargar (sr-close_s/l)</li>
+</ul>
+</li>
+<li>Modificaciones:
+<ul>
+<li>En el event sr-delete_block se muestra el sbr, el bloque padre (si tenía), si se encontraba en el body o en el input del bloque padre y su posición dentro de él</li>
+<li>El evento sr-continue ahora se llama sr-play</li>
+<li>En los eventos sr-select_f_input, sr-select_stack, sr-drop_input y sr-drop_stack muestran la posición en la que se selecciona/suelta el bloque dentro del padre</li>
+<li>El evento sr-mod_speed sustituye a los anteriores, mostrando ahora la velocidad anterior y la actual</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+            
+        </body>
+        </html>
