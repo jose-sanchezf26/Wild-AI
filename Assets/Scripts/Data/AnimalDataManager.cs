@@ -39,6 +39,8 @@ public class AnimalDataManager : MonoBehaviour
             name = nameText != null ? nameText.text : ""
         };
         AnimalDataSingleton.Instance.AddAnimal(newAnimal);
+        EventLogger.Instance.LogEvent(new EventData("wai-register_animal", new AnimalEvent(ObjectiveManager.Instance.level, newAnimal)));
+                
 
         // Mostrar notificación
         NotificationManager.Instance.ShowNotification("Animal añadido!");
@@ -70,5 +72,6 @@ public class AnimalDataManager : MonoBehaviour
     public void RemoveAnimal(AnimalData animal)
     {
         AnimalDataSingleton.Instance.RemoveAnimal(animal);
+        EventLogger.Instance.LogEvent(new EventData("wai-delete_animal", new AnimalEvent(ObjectiveManager.Instance.level, animal)));
     }
 }

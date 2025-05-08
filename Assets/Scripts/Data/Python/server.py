@@ -15,8 +15,8 @@ async def handler(websocket, path):
         clients.remove(websocket)
 
 async def main():
-    server = await websockets.serve(handler, "localhost", 10109)
-    print("🚀 Servidor WebSocket corriendo en ws://localhost:10109")
+    server = await websockets.serve(handler, "localhost", 8000)
+    print("🚀 Servidor WebSocket corriendo en ws://localhost:8000")
     await server.wait_closed()
 
 asyncio.run(main())

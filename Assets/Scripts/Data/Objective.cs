@@ -40,6 +40,7 @@ public class Objective : MonoBehaviour
             if (scoreAchieved >= scoreToAchieve)
             {
                 isCompleted = true;
+                EventLogger.Instance.LogEvent(new EventData("wai-complete_objective", new CompleteObjectiveEvent(ObjectiveManager.Instance.level, objectiveName)));
                 tick.SetActive(true);
             }
             UpdateText();
@@ -50,6 +51,7 @@ public class Objective : MonoBehaviour
             if (scoreAchieved <= scoreToAchieve)
             {
                 isCompleted = true;
+                EventLogger.Instance.LogEvent(new EventData("wai-complete_objective", new CompleteObjectiveEvent(ObjectiveManager.Instance.level, objectiveName)));
                 tick.SetActive(true);
             }
             UpdateText();

@@ -83,6 +83,8 @@ public class WindowEvent : LevelEvent
 public class AnimalEvent : LevelEvent
 {
     [JsonProperty]
+    public int id;
+    [JsonProperty]
     public string type;
     [JsonProperty]
     public float height;
@@ -95,6 +97,7 @@ public class AnimalEvent : LevelEvent
 
     public AnimalEvent(int level, AnimalData animal) : base(level)
     {
+        id = animal.id;
         type = animal.name;
         height = animal.height;
         width = animal.width;

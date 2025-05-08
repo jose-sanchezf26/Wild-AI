@@ -91,6 +91,8 @@ public class ObjectiveManager : MonoBehaviour
             if (!obj.isCompleted)
                 return;
         }
+        // Codigo para cuando completas todos los objetivos
+        EventLogger.Instance.LogEvent(new EventData("wai-complete_level", new LevelEvent(level)));
         WindowsManager windowsManager = FindFirstObjectByType<WindowsManager>();
         if (windowsManager != null)
             windowsManager.OpenObjectivesCompletedPanel();

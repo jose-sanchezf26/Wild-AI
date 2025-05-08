@@ -96,6 +96,7 @@ public class DbReporter : MonoBehaviour
 
     private async void Start()
     {
+        Debug.Log("✅ Start() de DbReporter se ha llamado.");
         await ConnectWebSocket();
     }
     #endregion
@@ -135,7 +136,9 @@ public class DbReporter : MonoBehaviour
     static WebSocket webSocket;
     private async Task ConnectWebSocket()
     {
-        webSocket = new WebSocket("ws://localhost:8000/ws/game-events");
+        Debug.Log("🟢 Intentando conectar WebSocket...");
+        // webSocket = new WebSocket("ws://localhost:8000/ws/game-events");
+        webSocket = new WebSocket("ws://localhost:8000");
         webSocket.OnOpen += () =>
     {
         Debug.Log("Connection open!");
@@ -169,9 +172,9 @@ public class DbReporter : MonoBehaviour
 
     void Update()
     {
-        #if !UNITY_WEBGL || UNITY_EDITOR
+#if !UNITY_WEBGL || UNITY_EDITOR
         webSocket.DispatchMessageQueue();
-        #endif
+#endif
     }
 
 
@@ -180,6 +183,7 @@ public class DbReporter : MonoBehaviour
         if (webSocket.State == WebSocketState.Open)
         {
             string jsonMessage = eventData.ToJson();
+            Debug.Log(jsonMessage);
             var bytes = Encoding.UTF8.GetBytes(jsonMessage);
             await webSocket.SendText(jsonMessage);
         }

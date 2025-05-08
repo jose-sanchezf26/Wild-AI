@@ -71,6 +71,7 @@ public class CloseOnClickOutside : MonoBehaviour
                 if (pause)
                     Time.timeScale = 1f;
                 panelToClose.SetActive(false);
+                EventLogger.Instance.LogEvent(new EventData("wai-close_window", new WindowEvent(ObjectiveManager.Instance.level, gameObject.name)));
             }
         }
     }

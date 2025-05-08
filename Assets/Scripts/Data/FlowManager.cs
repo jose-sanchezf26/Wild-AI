@@ -15,6 +15,7 @@ public class FlowManager : MonoBehaviour
     void Start()
     {
         game_id = "Wild AI";
+        session_id = Guid.NewGuid().ToString();
     }
 
     private void Awake()

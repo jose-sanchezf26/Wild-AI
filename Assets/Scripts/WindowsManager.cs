@@ -115,6 +115,7 @@ public class WindowsManager : MonoBehaviour
     {
         this.level = level;
         string sceneName = "Level" + level.ToString();
+        EventLogger.Instance.LogEvent(new EventData("wai-start_level", new LevelEvent(level)));
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(sceneName);
     }
@@ -132,6 +133,7 @@ public class WindowsManager : MonoBehaviour
     {
         string sceneName = "LevelSelection";
         ObjectiveManager.InitializeAllLevelObjectives();
+        EventLogger.Instance.LogEvent(new EventData("wai-exit_level", new LevelEvent(level)));
         SceneManager.LoadScene(sceneName);
     }
 

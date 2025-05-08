@@ -15,7 +15,8 @@ public class HelpButton : MonoBehaviour
     {
         if (helpPanel != null)
         {
-            helpPanel.SetActive(true); 
+            helpPanel.SetActive(true);
+            EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, helpPanel.name)));
         }
         else
         {
