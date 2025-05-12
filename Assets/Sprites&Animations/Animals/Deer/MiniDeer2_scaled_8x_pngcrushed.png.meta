@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: d34e772ad863ee84ca7daa113adcbf7b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8645801049889975922
+    second: MiniDeer2_scaled_8x_pngcrushed_0
+  - first:
+      213: 4277222792827756895
+    second: MiniDeer2_scaled_8x_pngcrushed_1
+  - first:
+      213: -1197190424508606032
+    second: MiniDeer2_scaled_8x_pngcrushed_2
+  - first:
+      213: -4624317714703160793
+    second: MiniDeer2_scaled_8x_pngcrushed_3
+  - first:
+      213: -1121608558273047455
+    second: MiniDeer2_scaled_8x_pngcrushed_4
+  - first:
+      213: -6197025529727128784
+    second: MiniDeer2_scaled_8x_pngcrushed_5
+  - first:
+      213: -829354288898927680
+    second: MiniDeer2_scaled_8x_pngcrushed_6
+  - first:
+      213: 2509290521748262227
+    second: MiniDeer2_scaled_8x_pngcrushed_7
+  - first:
+      213: -622831510675423542
+    second: MiniDeer2_scaled_8x_pngcrushed_8
+  - first:
+      213: 3482485173554005407
+    second: MiniDeer2_scaled_8x_pngcrushed_9
+  - first:
+      213: -4504773878915370401
+    second: MiniDeer2_scaled_8x_pngcrushed_10
+  - first:
+      213: -6230800673065427555
+    second: MiniDeer2_scaled_8x_pngcrushed_11
+  - first:
+      213: -961138725974213551
+    second: MiniDeer2_scaled_8x_pngcrushed_12
+  - first:
+      213: -5652355816863169026
+    second: MiniDeer2_scaled_8x_pngcrushed_13
+  - first:
+      213: 8698281283450948112
+    second: MiniDeer2_scaled_8x_pngcrushed_14
+  - first:
+      213: 585387590933836065
+    second: MiniDeer2_scaled_8x_pngcrushed_15
+  - first:
+      213: -8258284928656122282
+    second: MiniDeer2_scaled_8x_pngcrushed_16
+  - first:
+      213: -2344723753961900374
+    second: MiniDeer2_scaled_8x_pngcrushed_17
+  - first:
+      213: -5441222723581485705
+    second: MiniDeer2_scaled_8x_pngcrushed_18
+  - first:
+      213: -211614559695936564
+    second: MiniDeer2_scaled_8x_pngcrushed_19
+  - first:
+      213: 8849705993358229344
+    second: MiniDeer2_scaled_8x_pngcrushed_20
+  - first:
+      213: 5798964500597464233
+    second: MiniDeer2_scaled_8x_pngcrushed_21
+  - first:
+      213: 9001190704416059096
+    second: MiniDeer2_scaled_8x_pngcrushed_22
+  - first:
+      213: 7299013058740849899
+    second: MiniDeer2_scaled_8x_pngcrushed_23
+  - first:
+      213: -7157065508545824325
+    second: MiniDeer2_scaled_8x_pngcrushed_24
+  - first:
+      213: 9034665879340378384
+    second: MiniDeer2_scaled_8x_pngcrushed_25
+  - first:
+      213: -964622207271518320
+    second: MiniDeer2_scaled_8x_pngcrushed_26
+  - first:
+      213: -5109989277019380091
+    second: MiniDeer2_scaled_8x_pngcrushed_27
+  - first:
+      213: 8691961109123585536
+    second: MiniDeer2_scaled_8x_pngcrushed_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 900
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1543
+        width: 122
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e24695f3e0cf770800000000000000
+      internalID: 8645801049889975922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1543
+        width: 130
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51e3b7e77fbb5b30800000000000000
+      internalID: 4277222792827756895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1543
+        width: 122
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b95aa2e6a9b26fe0800000000000000
+      internalID: -1197190424508606032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1543
+        width: 122
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a62960a8f13dfb0800000000000000
+      internalID: -4624317714703160793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1287
+        width: 122
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164d81375fe3f60f0800000000000000
+      internalID: -1121608558273047455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1303
+        width: 154
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b669c2d1ebff9a0800000000000000
+      internalID: -6197025529727128784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1287
+        width: 130
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c39b391baa8d74f0800000000000000
+      internalID: -829354288898927680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1287
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d4f0b4f6ac2d220800000000000000
+      internalID: 2509290521748262227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1031
+        width: 122
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace754b7a024b57f0800000000000000
+      internalID: -622831510675423542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1031
+        width: 130
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95404970d5445030800000000000000
+      internalID: 3482485173554005407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1031
+        width: 130
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f527ac14604db71c0800000000000000
+      internalID: -4504773878915370401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 775
+        width: 122
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d9bafcccfb789a0800000000000000
+      internalID: -6230800673065427555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 775
+        width: 146
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c7f6acb6959a2f0800000000000000
+      internalID: -961138725974213551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 775
+        width: 146
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef502cff45cce81b0800000000000000
+      internalID: -5652355816863169026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 775
+        width: 122
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ac588edb086b870800000000000000
+      internalID: 8698281283450948112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 775
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121788599e6bf1800800000000000000
+      internalID: 585387590933836065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 519
+        width: 122
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e5d759c9da46d80800000000000000
+      internalID: -8258284928656122282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 519
+        width: 138
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa63eac2b2ed57fd0800000000000000
+      internalID: -2344723753961900374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 519
+        width: 162
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d542103c4ec74b0800000000000000
+      internalID: -5441222723581485705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 519
+        width: 130
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3e50cdda1301df0800000000000000
+      internalID: -211614559695936564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 519
+        width: 122
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f33c496b870da70800000000000000
+      internalID: 8849705993358229344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_21
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 519
+        width: 114
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac56333d7f0a7050800000000000000
+      internalID: 5798964500597464233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_22
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 519
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de644c5147aaec70800000000000000
+      internalID: 9001190704416059096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_23
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 263
+        width: 130
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec8f2184bd4b4560800000000000000
+      internalID: 7299013058740849899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_24
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 263
+        width: 122
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb9fce8f6defcac90800000000000000
+      internalID: -7157065508545824325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_25
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 7
+        width: 130
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019ec62efb4916d70800000000000000
+      internalID: 9034665879340378384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_26
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 7
+        width: 146
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09fb0299639fc92f0800000000000000
+      internalID: -964622207271518320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_27
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 7
+        width: 186
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586643193dba519b0800000000000000
+      internalID: -5109989277019380091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDeer2_scaled_8x_pngcrushed_28
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 7
+        width: 186
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00652d6a39c00a870800000000000000
+      internalID: 8691961109123585536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MiniDeer2_scaled_8x_pngcrushed_0: 8645801049889975922
+      MiniDeer2_scaled_8x_pngcrushed_1: 4277222792827756895
+      MiniDeer2_scaled_8x_pngcrushed_10: -4504773878915370401
+      MiniDeer2_scaled_8x_pngcrushed_11: -6230800673065427555
+      MiniDeer2_scaled_8x_pngcrushed_12: -961138725974213551
+      MiniDeer2_scaled_8x_pngcrushed_13: -5652355816863169026
+      MiniDeer2_scaled_8x_pngcrushed_14: 8698281283450948112
+      MiniDeer2_scaled_8x_pngcrushed_15: 585387590933836065
+      MiniDeer2_scaled_8x_pngcrushed_16: -8258284928656122282
+      MiniDeer2_scaled_8x_pngcrushed_17: -2344723753961900374
+      MiniDeer2_scaled_8x_pngcrushed_18: -5441222723581485705
+      MiniDeer2_scaled_8x_pngcrushed_19: -211614559695936564
+      MiniDeer2_scaled_8x_pngcrushed_2: -1197190424508606032
+      MiniDeer2_scaled_8x_pngcrushed_20: 8849705993358229344
+      MiniDeer2_scaled_8x_pngcrushed_21: 5798964500597464233
+      MiniDeer2_scaled_8x_pngcrushed_22: 9001190704416059096
+      MiniDeer2_scaled_8x_pngcrushed_23: 7299013058740849899
+      MiniDeer2_scaled_8x_pngcrushed_24: -7157065508545824325
+      MiniDeer2_scaled_8x_pngcrushed_25: 9034665879340378384
+      MiniDeer2_scaled_8x_pngcrushed_26: -964622207271518320
+      MiniDeer2_scaled_8x_pngcrushed_27: -5109989277019380091
+      MiniDeer2_scaled_8x_pngcrushed_28: 8691961109123585536
+      MiniDeer2_scaled_8x_pngcrushed_3: -4624317714703160793
+      MiniDeer2_scaled_8x_pngcrushed_4: -1121608558273047455
+      MiniDeer2_scaled_8x_pngcrushed_5: -6197025529727128784
+      MiniDeer2_scaled_8x_pngcrushed_6: -829354288898927680
+      MiniDeer2_scaled_8x_pngcrushed_7: 2509290521748262227
+      MiniDeer2_scaled_8x_pngcrushed_8: -622831510675423542
+      MiniDeer2_scaled_8x_pngcrushed_9: 3482485173554005407
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

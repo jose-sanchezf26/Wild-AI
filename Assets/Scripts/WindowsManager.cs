@@ -35,6 +35,7 @@ public class WindowsManager : MonoBehaviour
                     if (animalImage != null) animalImage.SetActive(false);
                     if (animalNumber != null) animalNumber.SetActive(false);
                 }
+                EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "RegisterPanel")));
                 CloseWindowsExcept(registerWindow);
             }
         }
@@ -49,6 +50,7 @@ public class WindowsManager : MonoBehaviour
                 else
                     Time.timeScale = 1f;
 
+                EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "DataPanel")));
                 CloseWindowsExcept(dataWindow);
             }
         }
@@ -63,6 +65,7 @@ public class WindowsManager : MonoBehaviour
                 else
                     Time.timeScale = 1f;
 
+                EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "PreprocessingPanel")));
                 CloseWindowsExcept(preprocessingWindow);
             }
         }
@@ -77,6 +80,7 @@ public class WindowsManager : MonoBehaviour
                 else
                     Time.timeScale = 1f;
 
+                EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "ModelPanel")));
                 CloseWindowsExcept(modelCreationWindow);
             }
         }
@@ -86,7 +90,8 @@ public class WindowsManager : MonoBehaviour
         {
             if (objectivesWindow != null)
             {
-                CloseWindowsExcept(objectivesWindow);
+                // CloseWindowsExcept(objectivesWindow);
+                objectivesWindow.SetActive(!objectivesWindow.activeSelf);
             }
         }
     }

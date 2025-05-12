@@ -189,10 +189,11 @@ MonoBehaviour:
   weight: 200
   height: 13
   width: 13
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: 
+  animalName: Oso
   heightRange: {x: 0.9, y: 1.5}
   widthRange: {x: 1.8, y: 3}
-  weightRange: {x: 130, y: 680}
+  densityFactor: 250
   possibleColors: []
   multiplier: 10
 --- !u!114 &6910229800305512304

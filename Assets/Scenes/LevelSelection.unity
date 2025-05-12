@@ -615,6 +615,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level
       objectReference: {fileID: 0}
+    - target: {fileID: 6047460730232185222, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047460730232185222, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047460730232185222, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1746331177}
+    - target: {fileID: 6047460730232185222, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047460730232185222, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047460730232185222, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WindowsManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047460730232185222, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047460730232185222, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514200105777148660, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_text
+      value: NIVEL 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844776944519035057, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_text
+      value: Desbalanceo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -780,6 +820,14 @@ PrefabInstance:
     - target: {fileID: 2294721815072316889, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
       propertyPath: m_Name
       value: Level (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514200105777148660, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_text
+      value: NIVEL 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844776944519035057, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_text
+      value: TBD
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1624,6 +1672,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8514200105777148660, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_text
+      value: NIVEL 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844776944519035057, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_text
+      value: "M\xE9tricas"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1868,6 +1924,14 @@ PrefabInstance:
     - target: {fileID: 2294721815072316889, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
       propertyPath: m_Name
       value: Level (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514200105777148660, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_text
+      value: NIVEL 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844776944519035057, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_text
+      value: "Clasificaci\xF3n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2448,6 +2512,14 @@ PrefabInstance:
     - target: {fileID: 2294721815072316889, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
       propertyPath: m_Name
       value: Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514200105777148660, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_text
+      value: NIVEL 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844776944519035057, guid: 9ac266995711c8c4db09b502aca25ea1, type: 3}
+      propertyPath: m_text
+      value: Preprocesamiento
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

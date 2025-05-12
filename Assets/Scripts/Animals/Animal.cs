@@ -8,14 +8,14 @@ public class Animal : MonoBehaviour
     public float weight = 10f;
     public float height = 1.0f;
     public float width = 1.0f;
-    public Color color;
+    public string color;
+    public string animalName;
 
     [Header("Random Variation Settings")]
-    [SerializeField] private Vector2 heightRange = new Vector2(0.8f, 1.2f);
-    [SerializeField] private Vector2 widthRange = new Vector2(0.8f, 1.2f);
-    [SerializeField] private float densityFactor = 250f; // Factor de densidad para el peso
-    [SerializeField] private Color[] possibleColors;
-    [SerializeField] private float multiplier = 1.0f;
+    [SerializeField] public Vector2 heightRange = new Vector2(0.8f, 1.2f);
+    [SerializeField] public Vector2 widthRange = new Vector2(0.8f, 1.2f);
+    [SerializeField] public float densityFactor = 250f; // Factor de densidad para el peso
+    [SerializeField] public ColorData[] possibleColors;
 
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
@@ -45,8 +45,9 @@ public class Animal : MonoBehaviour
 
         if (possibleColors.Length > 0)
         {
-            color = possibleColors[Random.Range(0, possibleColors.Length)];
-            spriteRenderer.color = color;
+            ColorData colorData = possibleColors[Random.Range(0, possibleColors.Length)];
+            color = colorData.colorName;
+            spriteRenderer.color = colorData.color;
         }
     }
 
@@ -56,6 +57,11 @@ public class Animal : MonoBehaviour
         float weightBase = height * width * densityFactor;
         float noise = weightBase * Random.Range(-noisePercentage, noisePercentage);
         weight = weightBase + noise;
+    }
+
+    public AnimalData CreateAnimalData()
+    {
+        return new AnimalData(animalName, heightRange, widthRange, densityFactor, possibleColors, 0.3f);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -125,12 +131,8 @@ public class Animal : MonoBehaviour
     }
 }
 
-public class AnimalData
+public class ColorData : MonoBehaviour
 {
-    public int id;
-    public string name;
-    public float weight;
-    public float height;
-    public float width;
-    public string color;
+    public string colorName;
+    public Color color;
 }

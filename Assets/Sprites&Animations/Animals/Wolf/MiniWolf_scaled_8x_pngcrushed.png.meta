@@ -1,0 +1,1300 @@
+fileFormatVersion: 2
+guid: 5f3cfc3c83cf6514b9e1f347aa7407d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2700059487276396551
+    second: MiniWolf_scaled_8x_pngcrushed_0
+  - first:
+      213: -7126876023678543694
+    second: MiniWolf_scaled_8x_pngcrushed_1
+  - first:
+      213: -8028238933564189343
+    second: MiniWolf_scaled_8x_pngcrushed_2
+  - first:
+      213: -4044734847781912785
+    second: MiniWolf_scaled_8x_pngcrushed_3
+  - first:
+      213: -5750367545051854745
+    second: MiniWolf_scaled_8x_pngcrushed_4
+  - first:
+      213: 5253836151273484256
+    second: MiniWolf_scaled_8x_pngcrushed_5
+  - first:
+      213: -7480413388361468186
+    second: MiniWolf_scaled_8x_pngcrushed_6
+  - first:
+      213: -1311158038325115524
+    second: MiniWolf_scaled_8x_pngcrushed_7
+  - first:
+      213: 8490737476844874171
+    second: MiniWolf_scaled_8x_pngcrushed_8
+  - first:
+      213: 8387674723155416273
+    second: MiniWolf_scaled_8x_pngcrushed_9
+  - first:
+      213: -8385983196136766904
+    second: MiniWolf_scaled_8x_pngcrushed_10
+  - first:
+      213: 2099624180226084727
+    second: MiniWolf_scaled_8x_pngcrushed_11
+  - first:
+      213: -2779446101129649478
+    second: MiniWolf_scaled_8x_pngcrushed_12
+  - first:
+      213: -7475399159071562946
+    second: MiniWolf_scaled_8x_pngcrushed_13
+  - first:
+      213: 7323806094691566068
+    second: MiniWolf_scaled_8x_pngcrushed_14
+  - first:
+      213: -3254055156436078251
+    second: MiniWolf_scaled_8x_pngcrushed_15
+  - first:
+      213: 2184615559171356260
+    second: MiniWolf_scaled_8x_pngcrushed_16
+  - first:
+      213: -4885712377070460709
+    second: MiniWolf_scaled_8x_pngcrushed_17
+  - first:
+      213: 3807997843718075695
+    second: MiniWolf_scaled_8x_pngcrushed_18
+  - first:
+      213: -5912280874515441162
+    second: MiniWolf_scaled_8x_pngcrushed_19
+  - first:
+      213: -6547483990270643626
+    second: MiniWolf_scaled_8x_pngcrushed_20
+  - first:
+      213: 4506240850053643203
+    second: MiniWolf_scaled_8x_pngcrushed_21
+  - first:
+      213: 6727166392631616481
+    second: MiniWolf_scaled_8x_pngcrushed_22
+  - first:
+      213: -5999813517556630415
+    second: MiniWolf_scaled_8x_pngcrushed_23
+  - first:
+      213: -4409991476686728533
+    second: MiniWolf_scaled_8x_pngcrushed_24
+  - first:
+      213: -8417524809016126684
+    second: MiniWolf_scaled_8x_pngcrushed_25
+  - first:
+      213: -3354012750996631294
+    second: MiniWolf_scaled_8x_pngcrushed_26
+  - first:
+      213: -6488736448697124066
+    second: MiniWolf_scaled_8x_pngcrushed_27
+  - first:
+      213: 5098624493077185358
+    second: MiniWolf_scaled_8x_pngcrushed_28
+  - first:
+      213: -2329281615769884749
+    second: MiniWolf_scaled_8x_pngcrushed_29
+  - first:
+      213: -7720259561887094754
+    second: MiniWolf_scaled_8x_pngcrushed_30
+  - first:
+      213: -4412580327593225752
+    second: MiniWolf_scaled_8x_pngcrushed_31
+  - first:
+      213: -3954235945810260839
+    second: MiniWolf_scaled_8x_pngcrushed_32
+  - first:
+      213: -9081770892361800875
+    second: MiniWolf_scaled_8x_pngcrushed_33
+  - first:
+      213: -4538315554039470920
+    second: MiniWolf_scaled_8x_pngcrushed_34
+  - first:
+      213: 4246392538580651298
+    second: MiniWolf_scaled_8x_pngcrushed_35
+  - first:
+      213: -3774525991402647056
+    second: MiniWolf_scaled_8x_pngcrushed_36
+  - first:
+      213: -8423834390505378667
+    second: MiniWolf_scaled_8x_pngcrushed_37
+  - first:
+      213: -850576464207434283
+    second: MiniWolf_scaled_8x_pngcrushed_38
+  - first:
+      213: -9002600943450524618
+    second: MiniWolf_scaled_8x_pngcrushed_39
+  - first:
+      213: 3148065351691838512
+    second: MiniWolf_scaled_8x_pngcrushed_40
+  - first:
+      213: 2588325072750756127
+    second: MiniWolf_scaled_8x_pngcrushed_41
+  - first:
+      213: 5263286037196306225
+    second: MiniWolf_scaled_8x_pngcrushed_42
+  - first:
+      213: 6230447905991206153
+    second: MiniWolf_scaled_8x_pngcrushed_43
+  - first:
+      213: -3159462818718973843
+    second: MiniWolf_scaled_8x_pngcrushed_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 550
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1799
+        width: 138
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70078835cc9887520800000000000000
+      internalID: 2700059487276396551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1799
+        width: 154
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8546a2400481d90800000000000000
+      internalID: -7126876023678543694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1799
+        width: 146
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16512f0b937f59090800000000000000
+      internalID: -8028238933564189343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1799
+        width: 138
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2fb05bf5173ed7c0800000000000000
+      internalID: -4044734847781912785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1543
+        width: 162
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768cf3d3f279230b0800000000000000
+      internalID: -5750367545051854745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1551
+        width: 162
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efe2c0c42069e840800000000000000
+      internalID: 5253836151273484256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1559
+        width: 170
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e673adf7ab303890800000000000000
+      internalID: -7480413388361468186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1543
+        width: 162
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75cb3106b4ddcde0800000000000000
+      internalID: -1311158038325115524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1543
+        width: 162
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb96f64dfb825d570800000000000000
+      internalID: 8490737476844874171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 1543
+        width: 170
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4933d88b1076470800000000000000
+      internalID: 8387674723155416273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1287
+        width: 162
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8428fd5c6b00f9b80800000000000000
+      internalID: -8385983196136766904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1287
+        width: 162
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f4230511d532d10800000000000000
+      internalID: 2099624180226084727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1287
+        width: 162
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2a2d54f7c6d69d0800000000000000
+      internalID: -2779446101129649478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1287
+        width: 170
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e332949321c024890800000000000000
+      internalID: -7475399159071562946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1031
+        width: 146
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f18ee507d263a560800000000000000
+      internalID: 7323806094691566068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1031
+        width: 170
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5517911731647d2d0800000000000000
+      internalID: -3254055156436078251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1031
+        width: 162
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4663337c640515e10800000000000000
+      internalID: 2184615559171356260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1055
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd06cf98a76723cb0800000000000000
+      internalID: -4885712377070460709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1031
+        width: 154
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25f44cfcd9b8d430800000000000000
+      internalID: 3807997843718075695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1103
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9db268edb53fda0800000000000000
+      internalID: -5912280874515441162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1031
+        width: 154
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6527c5b300aa225a0800000000000000
+      internalID: -6547483990270643626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_21
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 1079
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb3dc39d22698e30800000000000000
+      internalID: 4506240850053643203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_22
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1055
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3e0c92132bb5d50800000000000000
+      internalID: 6727166392631616481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_23
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 775
+        width: 154
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c3377e4616cbca0800000000000000
+      internalID: -5999813517556630415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_24
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 775
+        width: 154
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba25699fd109cc2c0800000000000000
+      internalID: -4409991476686728533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_25
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 823
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4235e8eb8c1fe2b80800000000000000
+      internalID: -8417524809016126684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_26
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 871
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20117bc5c272471d0800000000000000
+      internalID: -3354012750996631294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_27
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 775
+        width: 146
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b3746249063f5a0800000000000000
+      internalID: -6488736448697124066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_28
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 775
+        width: 170
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43c8f876f3f1c640800000000000000
+      internalID: 5098624493077185358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_29
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 847
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7203626babcafd0800000000000000
+      internalID: -2329281615769884749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_30
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 775
+        width: 170
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1828e705d02cd490800000000000000
+      internalID: -7720259561887094754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_31
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 823
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1dde6229d53c2c0800000000000000
+      internalID: -4412580327593225752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_32
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 519
+        width: 146
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c06e39b5bbf19c0800000000000000
+      internalID: -3954235945810260839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_33
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 519
+        width: 138
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553ea4d9d7117f180800000000000000
+      internalID: -9081770892361800875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_34
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 519
+        width: 138
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4e8d27c0aa401c0800000000000000
+      internalID: -4538315554039470920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_35
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 519
+        width: 130
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d08f6f3873eea30800000000000000
+      internalID: 4246392538580651298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_36
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 519
+        width: 122
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f157feeb903e9bc0800000000000000
+      internalID: -3774525991402647056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_37
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 519
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c2533d047881b80800000000000000
+      internalID: -8423834390505378667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_38
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 519
+        width: 138
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ddab9c56352234f0800000000000000
+      internalID: -850576464207434283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_39
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 263
+        width: 162
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634f807c326501380800000000000000
+      internalID: -9002600943450524618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_40
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 263
+        width: 162
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034ae4912cc20bb20800000000000000
+      internalID: 3148065351691838512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_41
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 7
+        width: 146
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11cb8ca0f39be320800000000000000
+      internalID: 2588325072750756127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_42
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 7
+        width: 146
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137fb56c3c2fa0940800000000000000
+      internalID: 5263286037196306225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_43
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 7
+        width: 162
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905ae243c5ff67650800000000000000
+      internalID: 6230447905991206153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniWolf_scaled_8x_pngcrushed_44
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 7
+        width: 162
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6083315e455724d0800000000000000
+      internalID: -3159462818718973843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MiniWolf_scaled_8x_pngcrushed_0: 2700059487276396551
+      MiniWolf_scaled_8x_pngcrushed_1: -7126876023678543694
+      MiniWolf_scaled_8x_pngcrushed_10: -8385983196136766904
+      MiniWolf_scaled_8x_pngcrushed_11: 2099624180226084727
+      MiniWolf_scaled_8x_pngcrushed_12: -2779446101129649478
+      MiniWolf_scaled_8x_pngcrushed_13: -7475399159071562946
+      MiniWolf_scaled_8x_pngcrushed_14: 7323806094691566068
+      MiniWolf_scaled_8x_pngcrushed_15: -3254055156436078251
+      MiniWolf_scaled_8x_pngcrushed_16: 2184615559171356260
+      MiniWolf_scaled_8x_pngcrushed_17: -4885712377070460709
+      MiniWolf_scaled_8x_pngcrushed_18: 3807997843718075695
+      MiniWolf_scaled_8x_pngcrushed_19: -5912280874515441162
+      MiniWolf_scaled_8x_pngcrushed_2: -8028238933564189343
+      MiniWolf_scaled_8x_pngcrushed_20: -6547483990270643626
+      MiniWolf_scaled_8x_pngcrushed_21: 4506240850053643203
+      MiniWolf_scaled_8x_pngcrushed_22: 6727166392631616481
+      MiniWolf_scaled_8x_pngcrushed_23: -5999813517556630415
+      MiniWolf_scaled_8x_pngcrushed_24: -4409991476686728533
+      MiniWolf_scaled_8x_pngcrushed_25: -8417524809016126684
+      MiniWolf_scaled_8x_pngcrushed_26: -3354012750996631294
+      MiniWolf_scaled_8x_pngcrushed_27: -6488736448697124066
+      MiniWolf_scaled_8x_pngcrushed_28: 5098624493077185358
+      MiniWolf_scaled_8x_pngcrushed_29: -2329281615769884749
+      MiniWolf_scaled_8x_pngcrushed_3: -4044734847781912785
+      MiniWolf_scaled_8x_pngcrushed_30: -7720259561887094754
+      MiniWolf_scaled_8x_pngcrushed_31: -4412580327593225752
+      MiniWolf_scaled_8x_pngcrushed_32: -3954235945810260839
+      MiniWolf_scaled_8x_pngcrushed_33: -9081770892361800875
+      MiniWolf_scaled_8x_pngcrushed_34: -4538315554039470920
+      MiniWolf_scaled_8x_pngcrushed_35: 4246392538580651298
+      MiniWolf_scaled_8x_pngcrushed_36: -3774525991402647056
+      MiniWolf_scaled_8x_pngcrushed_37: -8423834390505378667
+      MiniWolf_scaled_8x_pngcrushed_38: -850576464207434283
+      MiniWolf_scaled_8x_pngcrushed_39: -9002600943450524618
+      MiniWolf_scaled_8x_pngcrushed_4: -5750367545051854745
+      MiniWolf_scaled_8x_pngcrushed_40: 3148065351691838512
+      MiniWolf_scaled_8x_pngcrushed_41: 2588325072750756127
+      MiniWolf_scaled_8x_pngcrushed_42: 5263286037196306225
+      MiniWolf_scaled_8x_pngcrushed_43: 6230447905991206153
+      MiniWolf_scaled_8x_pngcrushed_44: -3159462818718973843
+      MiniWolf_scaled_8x_pngcrushed_5: 5253836151273484256
+      MiniWolf_scaled_8x_pngcrushed_6: -7480413388361468186
+      MiniWolf_scaled_8x_pngcrushed_7: -1311158038325115524
+      MiniWolf_scaled_8x_pngcrushed_8: 8490737476844874171
+      MiniWolf_scaled_8x_pngcrushed_9: 8387674723155416273
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

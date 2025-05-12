@@ -68,7 +68,36 @@ public class ObjectiveManager : MonoBehaviour
         }
         };
 
+        var nivel5 = new LevelObjectives
+        {
+            level = 5,
+            objectives = new List<Objective>
+        {
+            new Objective
+            {
+                objectiveName = "Register animals",
+                description = "Registra animales en la base de datos",
+                objectiveType = ObjectiveType.AchieveScore,
+                scoreToAchieve = 5
+            },
+            new Objective
+            {
+                objectiveName = "Create model",
+                description = "Crea y prueba un primer modelo",
+                objectiveType = ObjectiveType.CompleteTask,
+                scoreToAchieve = 1
+            },
+            new Objective
+            {
+                objectiveName = "Reach Error",
+                description = "Consigue un modelo con un error menor del 30% en cinco pruebas",
+                objectiveType = ObjectiveType.DecreaseValue,
+                scoreToAchieve = 20
+            }
+        }
+        };
         allLevelObjectives.Add(nivel1);
+        allLevelObjectives.Add(nivel5);
     }
 
 

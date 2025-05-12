@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title></title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Título</th>
+<th>Contenido nuevo</th>
+<th>Mecánicas nuevas</th>
+<th>Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Introducción al Machine Learning</td>
+<td></td>
+<td>1. Registro de datos: ancho y alto mediante la regla y peso con la báscula.  <br> 2. Visualización de los datos datos mediante una tabla. <br> 3. Test del modelo situando al jugador en un escenario de prueba donde pueda medir el ancho, el alto y el peso de un animal y compararlo con la predicción del modelo</td>
+<td>Introducir al jugador en Machine Learning.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Limpieza de datos</td>
+<td>Se añaden animales con datos nulos o ruidosos en sus atributos y se explica el primer método de ML, la regresión lineal.</td>
+<td>1. Elección de imputar o descartar los datos nulos detectados. <br> 2. Eleción de corregir o eliminar los datos ruidosos. <br> 3. Elección de atributos en el modelo de regresión lineal.</td>
+<td>Destacar la importancia de tener unos datos limpios a la hora de entrenar un modelo y explicar la regresión lineal.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Preprocesamiento general</td>
+<td>Normalización, codificación de categorías y elección de variable objetivo (probelma de regresión)</td>
+<td>1. Elección de la técnica de normalización. <br> 2. Elección de codificación. <br> Elección de la variable objetivo entre peso, alto y ancho.</td>
+<td>Explicar el proceso general del preprocesamiento.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Métricas en regresión</td>
+<td>Se añade una ventana en la escena de test donde puede generar datos de test para visualizar gráficas de métricas, el error en el entrenamiento y el test y comprobar si tiene sobreajuste o no. Se introduce un nuevo método de regresión.</td>
+<td>1. Generar datos de test. <br> 2. Explicación y visualización de métricas. <br> Elección de la variable objetivo entre peso, alto y ancho.</td>
+<td>Explicar cómo las métricas pueden determinar la calidad de tu modelo, y la importancia del factor de generalización del mismo.</td>
+</tr>
+<tr>
+<td>Z (Nivel que se va a crear para el TFM)</td>
+<td>Desbalanceo de clases</td>
+<td>Se añade una ventana en la escena en el preprocesamiento donde permite ver el número de instancias de cada clase del animal. Se añaden distintas opciones para el desbalanceo de clases.</td>
+<td>1. Elección de técnica de desbalanceo</td>
+<td>Dar a entender la importancia de tener ejemplos de todos los tipos de animales para crear un modelo de clasificación consistente.</td>
+</tr>
+</tbody>
+</table>
+<p>El nivel a incluir para el TFM va a tener todas las mecánicas de los niveles anteriores que aun no habrán sido creados, de esta forma se simplificaría la creación de los niveles previos omitiendo información y adaptando las ventanas de ayuda con sus respectivas explicaciones.
+El nivel va a incluir:</p>
+<ul>
+<li>Cada vez que se registra un animal de forma manual, se añaden X más del mismo tipo, además se intentará implementar un nuevo objeto que se encuentre por el mapa que simule una &quot;nota&quot; con muchos datos, de forma que se añadan a los datos del jugador (será lo último ya que no es esencial).</li>
+<li>En el preprocesamiento, opciones para el tratamiento de datos nulos y ruidosos, normalización de datos, categorización de variables de texto y una nueva ventana donde pueda visualizar distintas gráficas relacionadas con los datos (gráfica de desbalanceo, las demás todavía por determinar).</li>
+<li>En la parte de la creación de modelo, la opción de modificar los parámetros del algoritmo de clasificación (Random Forest) y explicación del mismo (estoy dudando de si hacer yo la explicación o proporcionar un enlace a algún vídeo).</li>
+<li>En el escenario de test se podrá probar el modelo de forma individual por animal, al igual que en el primer nivel, pero habrá una nueva ventana donde el jugador pueda generar datos de test y ver distintas gráficas relacionadas con el desbalanceo, como la matriz de confusión, También podrá ver distintas métricas como el f1-score, recall y accuracy.</li>
+<li>Los objetivos son:
+<ul>
+<li>Registra en la base de datos los cuatro tipos de animales presenten en el escenario.</li>
+<li>Prueba el modelo con todas las opciones de desbalanceo.</li>
+<li>Consigue un modelo con un valor para la métrica X de como mínimo Y.</li>
+</ul>
+</li>
+</ul>
+
+            
+            
+        </body>
+        </html>
