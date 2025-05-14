@@ -47,7 +47,7 @@ public class Animal : MonoBehaviour
         {
             ColorData colorData = possibleColors[Random.Range(0, possibleColors.Length)];
             color = colorData.colorName;
-            spriteRenderer.color = colorData.color;
+            spriteRenderer.color = new Color(colorData.color.r, colorData.color.g, colorData.color.b, 1f);;
         }
     }
 
@@ -129,10 +129,4 @@ public class Animal : MonoBehaviour
             uiImage.SetActive(true);
         }
     }
-}
-
-public class ColorData : MonoBehaviour
-{
-    public string colorName;
-    public Color color;
 }

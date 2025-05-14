@@ -13,7 +13,7 @@ public class AnimalDataManager : MonoBehaviour
     [SerializeField] private TMP_InputField heightText;
     [SerializeField] private TMP_InputField weightText;
     [SerializeField] private TMP_Dropdown colorDropdown;
-    [SerializeField] private TMP_InputField nameText;
+    [SerializeField] private TMP_Dropdown nameText;
 
     // Campos para visualizar el panel de datos
     [SerializeField] private GameObject dataEntry;
@@ -37,16 +37,10 @@ public class AnimalDataManager : MonoBehaviour
             height = float.Parse(heightText.text),
             weight = float.Parse(weightText.text),
             color = colorDropdown != null ? colorDropdown.options[colorDropdown.value].text : "",
-            name = nameText != null ? nameText.text : ""
+            name = nameText != null ? nameText.options[nameText.value].text : ""
         };
         AnimalDataSingleton.Instance.AddAnimal(newAnimal);
         EventLogger.Instance.LogEvent(new EventData("wai-register_animal", new AnimalEvent(ObjectiveManager.Instance.level, newAnimal)));
-
-        // Autogenera animales dependidendo del nivel
-        if (autoGenerate)
-        {
-            AutoGenerateAnimals(newAnimal.name);
-        }
 
         // Mostrar notificación
         NotificationManager.Instance.ShowNotification("Animal añadido!");
@@ -56,6 +50,12 @@ public class AnimalDataManager : MonoBehaviour
 
         // Añade el animal al panel
         AddAnimalToPanel(newAnimal);
+
+        // Autogenera animales dependidendo del nivel
+        if (autoGenerate)
+        {
+            AutoGenerateAnimals(newAnimal.name);
+        }
     }
 
     public void AddAnimalToPanel(AnimalData animal)

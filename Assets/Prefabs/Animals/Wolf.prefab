@@ -194,8 +194,11 @@ MonoBehaviour:
   heightRange: {x: 0.6, y: 0.85}
   widthRange: {x: 1, y: 1.6}
   densityFactor: 50
-  possibleColors: []
-  multiplier: 10
+  possibleColors:
+  - {fileID: 6886794246480863077, guid: 7f1ea3be998eba248bab701a9fe98020, type: 3}
+  - {fileID: 9102243207956983899, guid: 542df085e38bdef47bcf8e06e81711e1, type: 3}
+  - {fileID: 3776510905146190742, guid: fdf57958f6af3694a805431e3c098f6e, type: 3}
+  - {fileID: 7710030939148561942, guid: a03e8c78998a7564da92a8a481bb523a, type: 3}
 --- !u!114 &6910229800305512304
 MonoBehaviour:
   m_ObjectHideFlags: 0
