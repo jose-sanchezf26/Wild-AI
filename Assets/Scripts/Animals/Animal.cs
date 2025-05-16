@@ -9,6 +9,7 @@ public class Animal : MonoBehaviour
     public float height = 1.0f;
     public float width = 1.0f;
     public string color;
+    public SpriteRenderer colorImage;
     public string animalName;
 
     [Header("Random Variation Settings")]
@@ -29,6 +30,7 @@ public class Animal : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         uiImage = GameObject.Find("AnimalImage");
+        colorImage = transform.Find("ColorImage").GetComponent<SpriteRenderer>();
         if (uiImage != null)
         {
             uiRectTransform = uiImage.GetComponent<RectTransform>();
@@ -47,7 +49,7 @@ public class Animal : MonoBehaviour
         {
             ColorData colorData = possibleColors[Random.Range(0, possibleColors.Length)];
             color = colorData.colorName;
-            spriteRenderer.color = new Color(colorData.color.r, colorData.color.g, colorData.color.b, 1f);;
+            colorImage.color = new Color(colorData.color.r, colorData.color.g, colorData.color.b, 1f);;
         }
     }
 

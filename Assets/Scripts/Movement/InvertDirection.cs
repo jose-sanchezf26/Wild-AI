@@ -10,6 +10,12 @@ public class InvertDirection : MonoBehaviour
     // Frecuencia de cambio de dirección
     public float maxCheckFrequency = 0.1f;
     private float checkTimer = 0f;
+    public Transform registeredIcon;
+
+    void Awake()
+    {
+        registeredIcon = transform.Find("RegisteredIcon");
+    }
 
     // Update is called once per frame
     void Update()
@@ -28,10 +34,12 @@ public class InvertDirection : MonoBehaviour
             if (direction > 0)
             {
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                registeredIcon.localScale = new Vector3(Mathf.Abs(registeredIcon.localScale.x), registeredIcon.localScale.y, registeredIcon.localScale.z);
             }
             else if (direction < 0)
             {
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                registeredIcon.localScale = new Vector3(-Mathf.Abs(registeredIcon.localScale.x), registeredIcon.localScale.y, registeredIcon.localScale.z);
             }
 
             lastPosition = currentPosition;

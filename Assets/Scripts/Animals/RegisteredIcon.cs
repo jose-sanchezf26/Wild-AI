@@ -16,7 +16,8 @@ public class RegisteredIcon : MonoBehaviour
             // Si el clic es sobre este objeto
             if (hit.collider != null && hit.collider.gameObject == gameObject)
             {
-                ChangeColor();
+                // ChangeColor();
+                registeredIcon.gameObject.SetActive(!registeredIcon.gameObject.activeSelf);
             }
         }
     }
