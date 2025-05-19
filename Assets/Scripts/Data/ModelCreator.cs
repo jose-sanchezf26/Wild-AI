@@ -18,6 +18,7 @@ public class ModelCreator : MonoBehaviour
 
     void Start()
     {
+        level = ObjectiveManager.Instance.level;
         createModelFileName = "create_model_l" + level + ".py";
         testModelFileName = "test_model_l" + level + ".py";
     }
@@ -29,22 +30,46 @@ public class ModelCreator : MonoBehaviour
 
     }
 
-    private void ExportAnimalData(string fileName = "animal_data.csv")
+    public void ExportAnimalData(string fileName = "animal_data.csv")
     {
         StringBuilder csvContent = new StringBuilder();
 
-        // Cabecera
-        csvContent.AppendLine("Weight,Height,Width");
 
-        // Contenido
-        foreach (var animal in AnimalDataSingleton.Instance.animalDataList)
+
+        if (level == 1)
         {
-            string width = animal.width.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
-            string height = animal.height.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
-            string weight = animal.weight.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
-            string line = $"{weight},{height},{width}";
-            csvContent.AppendLine(line);
+            // Cabecera
+            csvContent.AppendLine("Weight,Height,Width");
+
+            // Contenido
+            foreach (var animal in AnimalDataSingleton.Instance.animalDataList)
+            {
+                string width = animal.width.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+                string height = animal.height.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+                string weight = animal.weight.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+                string line = $"{weight},{height},{width}";
+                csvContent.AppendLine(line);
+            }
         }
+        else
+        {
+            // Cabecera
+            csvContent.AppendLine("Weight,Height,Width,Color,Animal");
+
+            // Contenido
+            foreach (var animal in AnimalDataSingleton.Instance.animalDataList)
+            {
+                string width = animal.width.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+                string height = animal.height.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+                string weight = animal.weight.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+                string color = animal.color;
+                string animalType = animal.name;
+                string line = $"{weight},{height},{width},{color},{animalType}";
+                csvContent.AppendLine(line);
+            }
+        }
+
+
 
         // Ruta de guardado
         string folderPath = Path.Combine(Application.dataPath, "Python/data");
@@ -54,7 +79,7 @@ public class ModelCreator : MonoBehaviour
         UnityEngine.Debug.Log($"CSV exportado correctamente en: {filePath}");
     }
 
-    private void ExecutePythonFile(string fileName)
+    public void ExecutePythonFile(string fileName)
     {
         try
         {
@@ -91,7 +116,7 @@ public class ModelCreator : MonoBehaviour
         }
         catch (Exception e)
         {
-            UnityEngine.Debug.LogError("Error ejecutando el script Python: " + e.Message);
+            UnityEngine.Debug.LogError("Error ejecutando el script Python: " + fileName + " " + e.Message);
         }
     }
 
