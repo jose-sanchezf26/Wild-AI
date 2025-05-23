@@ -12,11 +12,19 @@ public class GenerateGraphics : MonoBehaviour
     
     void Start()
     {
+        foreach (Image image in images)
+        {
+            image.gameObject.SetActive(false);
+        }
         pythonFileName = "generate_graphics_l" + ObjectiveManager.Instance.level + ".py";
     }
 
     public void GenerateGraphicsPy()
     {
+        foreach (Image image in images)
+        {
+            image.gameObject.SetActive(true);
+        }
         // Exportamos los datos
         modelCreator.ExportAnimalData();
         // Ejecutar el .py que genera los gráficos
