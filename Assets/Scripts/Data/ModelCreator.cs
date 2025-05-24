@@ -227,4 +227,39 @@ public class ModelCreator : MonoBehaviour
         }
     }
 
+    // Exportar configuración del modelo a JSON
+    public TMP_Dropdown modelTypeDropdown;
+    public List<ModelParameter> modelParameters;
+
+    public void ExportModelParameters()
+    {
+        Dictionary<string, string> parametersDict = new Dictionary<string, string>();
+        // Se crea esta variable para poder exportar el tipo de modelo
+        parametersDict["modelType"] = modelTypeDropdown.options[modelTypeDropdown.value].text;
+        // Se recorre la lista de parámetros del modelo y se exportan sus valores
+        foreach (var parameter in modelParameters)
+        {
+            // Se comprueba si es nulo para evitar errores
+            if (parameter == null)
+            {
+                UnityEngine.Debug.LogWarning("Parameter is null, skipping export.");
+                continue;
+            }
+            parameter.GetValues();
+            if (!string.IsNullOrEmpty(parameter.parameterName))
+            {
+                parametersDict[parameter.parameterName] = parameter.parameterValue;
+            }
+        }
+        // Se crea el JSON con los parámetros del modelo y se guarda
+        string json = JsonConvert.SerializeObject(parametersDict, Formatting.Indented);
+        string path = Application.dataPath + "/Python/Data/model_parameters.json";
+        File.WriteAllText(path, json);
+    }
+}
+
+[System.Serializable]
+public class ParameterDataList
+{
+    public List<ParameterData> parameters;
 }

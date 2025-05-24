@@ -1,0 +1,9 @@
+{
+  "modelType": "Decision Tree",
+  "C": "23",
+  "penalty": "L1",
+  "learning_rate": "3",
+  "max_depth": "",
+  "min_samples_split": "",
+  "criterion": "gini"
+}
