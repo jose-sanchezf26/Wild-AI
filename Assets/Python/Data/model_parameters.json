@@ -1,9 +1,15 @@
 {
   "modelType": "Decision Tree",
-  "C": "23",
-  "penalty": "L1",
-  "learning_rate": "3",
+  "C": "",
+  "penalty": "l1",
+  "max_iter": "",
   "max_depth": "",
   "min_samples_split": "",
-  "criterion": "gini"
+  "criterion": "gini",
+  "% Train": "50",
+  "% Test": "",
+  "Datos nulos": "",
+  "Normalización": "",
+  "Categorización": "One-Hot",
+  "Técnica de desbalanceo": ""
 }

@@ -27,7 +27,14 @@ public class ModelCreator : MonoBehaviour
         ExportAnimalData();
         ExecutePythonFile(createModelFileName);
         modelCreated = true;
+    }
 
+    public void CreateModelWithParameters()
+    {
+        ExportAnimalData();
+        ExportModelParameters();
+        ExecutePythonFile(createModelFileName);
+        modelCreated = true;
     }
 
     public void ExportAnimalData(string fileName = "animal_data.csv")
@@ -112,11 +119,13 @@ public class ModelCreator : MonoBehaviour
             if (!string.IsNullOrEmpty(error))
             {
                 UnityEngine.Debug.LogError("Python Error: " + error);
+                NotificationManager.Instance.ShowNotification("Error al crear el modelo");
             }
         }
         catch (Exception e)
         {
             UnityEngine.Debug.LogError("Error ejecutando el script Python: " + fileName + " " + e.Message);
+            NotificationManager.Instance.ShowNotification("Error al crear el modelo");
         }
     }
 
