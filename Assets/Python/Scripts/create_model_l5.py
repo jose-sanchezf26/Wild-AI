@@ -1,13 +1,15 @@
 import pandas as pd
 import os
 import json
+import seaborn as sns
 import numpy as np
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.impute import SimpleImputer
-from sklearn.metrics import mean_absolute_error, r2_score
+from sklearn.metrics import mean_absolute_error, r2_score, confusion_matrix, ConfusionMatrixDisplay
 from imblearn.over_sampling import SMOTE
 from sklearn.utils import resample
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder, MinMaxScaler, StandardScaler, RobustScaler, Normalizer
@@ -156,3 +158,40 @@ model.fit(X_train, y_train)
 model_save_path = os.path.join(script_dir, '..', 'Models', 'model_l5.pkl')
 
 joblib.dump(model, model_save_path)
+
+# Parte de generación de métricas y gráficas
+# Evaluación
+y_pred = model.predict(X_test)
+
+# Configuración para gráficas
+background_color = '#002F00'
+text_color = '#00EE00'
+titlefontsize = 30
+fontsize = 25
+original_image_size = (6.7,4)
+factor = 2.5
+image_size = original_image_size[0] * factor, original_image_size[1] * factor
+
+# Matriz de confusión
+cm = confusion_matrix(y_test, y_pred, labels=model.classes_)
+# Crear la figura
+plt.figure(figsize=(10, 10))
+ax = sns.heatmap(cm, annot=True, fmt='d', cmap='Greens', 
+                 xticklabels=model.classes_, 
+                 yticklabels=model.classes_,
+                 cbar=False, annot_kws={"size": fontsize})
+
+# Estilo
+plt.title("Matriz de Confusión", fontsize=titlefontsize, color=text_color, pad=20)
+plt.xlabel("Predicción", fontsize=fontsize, color=text_color)
+plt.ylabel("Real", fontsize=fontsize, color=text_color)
+plt.xticks(fontsize=fontsize, color=text_color)
+plt.yticks(fontsize=fontsize, color=text_color)
+plt.gca().set_facecolor(background_color)
+plt.gcf().patch.set_facecolor(background_color)
+
+# Guardar imagen
+output_img_path = os.path.join(script_dir, '..', 'Images', 'confusion_matrix.png')
+plt.tight_layout()
+plt.savefig(output_img_path, facecolor=background_color)
+plt.close()
