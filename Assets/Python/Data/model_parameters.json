@@ -6,7 +6,7 @@
   "max_depth": "",
   "min_samples_split": "",
   "criterion": "gini",
-  "% Train": "50",
+  "% Train": "60",
   "% Test": "",
   "Datos nulos": "",
   "Normalización": "",

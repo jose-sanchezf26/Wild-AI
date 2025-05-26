@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d7db7585573394eb0165a20c6e061b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorName: "Marr\xF3n"
+  colorName: Marron
   color: {r: 0.627451, g: 0.32156864, b: 0.1764706, a: 1}

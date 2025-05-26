@@ -3,6 +3,7 @@ import os
 import json
 import numpy as np
 from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.impute import SimpleImputer
@@ -61,12 +62,24 @@ elif null_strategy in ["Media", "Mediana", "Moda"]:
 
 # Categorización de variables
 categorization = params.get("Categorización", "")
+encoder_info = {"Color": categorization}
+with open(os.path.join(script_dir, '..', 'Data', 'encoder_info.json'), 'w') as f:
+    json.dump(encoder_info, f)
+
 if categorization == "One-Hot":
-    data = pd.get_dummies(data, columns=categorical_cols)
+    ohe = OneHotEncoder(handle_unknown='ignore', sparse_output=False)
+    color_encoded = ohe.fit_transform(data[['Color']])  # Esto ya es un array denso
+    color_df = pd.DataFrame(color_encoded, columns=ohe.get_feature_names_out())
+    color_df.index = data.index
+    data = pd.concat([data.drop(columns=['Color']), color_df], axis=1)
+    print(data.head())
+    joblib.dump(ohe, os.path.join(script_dir, '..', 'Models', 'color_encoder.pkl'))
 elif categorization == "Label":
     le = LabelEncoder()
     for col in categorical_cols:
         data[col] = le.fit_transform(data[col].astype(str))
+    joblib.dump(le, os.path.join(script_dir, '..', 'Models', 'color_encoder.pkl'))
+    
 
 # Normalización
 scaling_method = params.get("Nomalización", "")

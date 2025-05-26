@@ -132,6 +132,7 @@ public class ModelCreator : MonoBehaviour
     public TMP_InputField widthInput;
     public TMP_InputField heightInput;
     public TMP_InputField weightInput;
+    public TMP_Dropdown colorDropdown;
     public TextMeshProUGUI predictionText;
     public TextMeshProUGUI errorText;
 
@@ -167,13 +168,23 @@ public class ModelCreator : MonoBehaviour
     {
         // Exporta a json los datos del animal
         string json;
-        var data = new Dictionary<string, float>();
+        Dictionary<string, object> data = new Dictionary<string, object>();
         if (level == 1)
         {
-            data = new Dictionary<string, float>
+            data = new Dictionary<string, object>
             {
                 { "width", float.Parse(widthInput.text)},
                 { "height", float.Parse(heightInput.text) }
+            };
+        }
+        else
+        {
+            data = new Dictionary<string, object>
+            {
+                { "width", widthInput.text },
+                { "height", heightInput.text },
+                { "weight", weightInput.text },
+                { "color", colorDropdown.options[colorDropdown.value].text }
             };
         }
         json = JsonConvert.SerializeObject(data, Formatting.Indented);
@@ -189,25 +200,27 @@ public class ModelCreator : MonoBehaviour
         if (File.Exists(outputPath))
         {
             string outputJson = File.ReadAllText(outputPath);
-
             // Usar JObject de Newtonsoft.Json para leer el JSON
             JObject jsonObject = JObject.Parse(outputJson);
+            if (level == 1)
+            {
+                // Extraer los valores directamente
+                float width = jsonObject["width"].Value<float>();
+                float height = jsonObject["height"].Value<float>();
+                float predictedWeight = jsonObject["predicted_weight"].Value<float>();
 
-            // Extraer los valores directamente
-            float width = jsonObject["width"].Value<float>();
-            float height = jsonObject["height"].Value<float>();
-            float predictedWeight = jsonObject["predicted_weight"].Value<float>();
-
-            // Mostrar los resultados
-            predictionText.text = predictedWeight.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
-            float realWeight = float.Parse(weightInput.text);
-            errorText.text = Mathf.Abs(realWeight - predictedWeight).ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
-            ObjectiveManager.Instance.AddScoreToObjective("Create model", 1);
-            ProcessErrorHistory(realWeight, predictedWeight);
-
-            UnityEngine.Debug.Log("Width: " + width);
-            UnityEngine.Debug.Log("Height: " + height);
-            UnityEngine.Debug.Log("Predicted Weight: " + predictedWeight);
+                // Mostrar los resultados
+                predictionText.text = predictedWeight.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+                float realWeight = float.Parse(weightInput.text);
+                errorText.text = Mathf.Abs(realWeight - predictedWeight).ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+                ObjectiveManager.Instance.AddScoreToObjective("Create model", 1);
+                ProcessErrorHistory(realWeight, predictedWeight);
+            }
+            else
+            {
+                string predictedAnimal = jsonObject["predicted_animal"].Value<string>();
+                predictionText.text = predictedAnimal;
+            }
         }
     }
 
