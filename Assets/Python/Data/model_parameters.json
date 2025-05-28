@@ -1,15 +1,15 @@
 {
   "modelType": "Decision Tree",
-  "C": "",
+  "C": "10",
   "penalty": "l1",
   "max_iter": "",
-  "max_depth": "",
-  "min_samples_split": "",
-  "criterion": "gini",
-  "% Train": "60",
+  "max_depth": "10",
+  "min_samples_split": "10",
+  "criterion": "entropy",
+  "% Train": "80",
   "% Test": "",
-  "Datos nulos": "",
-  "Normalización": "",
+  "Datos nulos": "Eliminar",
+  "Normalización": "Min-Max",
   "Categorización": "One-Hot",
-  "Técnica de desbalanceo": ""
+  "Técnica de desbalanceo": "SMOTE"
 }

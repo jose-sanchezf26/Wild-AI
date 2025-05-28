@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+      Ciervo     0.0000    0.0000    0.0000         1
+        Lobo     0.0000    0.0000    0.0000         1
+         Oso     0.5000    1.0000    0.6667         2
+       Zorro     1.0000    0.5000    0.6667         2
+
+    accuracy                         0.5000         6
+   macro avg     0.3750    0.3750    0.3333         6
+weighted avg     0.5000    0.5000    0.4444         6

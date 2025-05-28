@@ -9,6 +9,7 @@ public class WindowsManager : MonoBehaviour
     public GameObject dataWindow;
     public GameObject modelCreationWindow;
     public GameObject objectivesWindow;
+    public GameObject graphicsWindow;
     public List<GameObject> windowsList;
     public GameObject animalImage;
     public Ruler ruler;
@@ -67,6 +68,20 @@ public class WindowsManager : MonoBehaviour
 
                 EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "PreprocessingPanel")));
                 CloseWindowsExcept(preprocessingWindow);
+            }
+        }
+        // Activa el panel de gráficos
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            if (graphicsWindow != null)
+            {
+                if (!graphicsWindow.activeSelf)
+                    Time.timeScale = 0f;
+                else
+                    Time.timeScale = 1f;
+
+                EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "GraphicsPanel")));
+                CloseWindowsExcept(graphicsWindow);
             }
         }
 

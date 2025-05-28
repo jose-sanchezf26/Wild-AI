@@ -9,7 +9,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.impute import SimpleImputer
-from sklearn.metrics import mean_absolute_error, r2_score, confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import mean_absolute_error, r2_score, confusion_matrix, ConfusionMatrixDisplay, classification_report
 from imblearn.over_sampling import SMOTE
 from sklearn.utils import resample
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder, MinMaxScaler, StandardScaler, RobustScaler, Normalizer
@@ -49,7 +49,7 @@ null_strategy = params.get("Datos nulos", "")
 if null_strategy == "Eliminar":
     data = data.dropna()
 elif null_strategy == "Imputar con constante":
-    data = data.fillna(0)  # o el valor que definas
+    data = data.fillna(0)  
 elif null_strategy in ["Media", "Mediana", "Moda"]:
     imputer_strategy = {
         "Media": "mean",
@@ -139,12 +139,12 @@ print(f"Creando modelo de tipo: {model_type}")
 if model_type == "Logistic Regression":
     c = parse_val(params.get("C"), default=1.0)
     penalty = params.get("penalty", "l2")
-    max_iter = parse_val(params.get("max_iter"), default=100)
+    max_iter = int(parse_val(params.get("max_iter"), default=100))
     model = LogisticRegression(C=c, penalty=penalty, max_iter=max_iter, solver="saga")
 
 elif model_type == "Decision Tree":
-    max_depth = parse_val(params.get("max_depth"), default=None)
-    min_samples_split = parse_val(params.get("min_samples_split"), default=2)
+    max_depth = int(parse_val(params.get("max_depth"), default=None))
+    min_samples_split = int(parse_val(params.get("min_samples_split"), default=2))
     criterion = params.get("criterion", "gini")
     model = DecisionTreeClassifier(max_depth=max_depth, min_samples_split=min_samples_split, criterion=criterion)
 
@@ -162,6 +162,14 @@ joblib.dump(model, model_save_path)
 # Parte de generación de métricas y gráficas
 # Evaluación
 y_pred = model.predict(X_test)
+
+
+# Métricas
+report = classification_report(y_test, y_pred, digits=2)
+# Definimos ruta y guardamos
+metrics_txt_path = os.path.join(script_dir, '..', 'Data', 'classification_report.txt')
+with open(metrics_txt_path, 'w', encoding='utf-8') as f:
+    f.write(report)
 
 # Configuración para gráficas
 background_color = '#002F00'
@@ -194,4 +202,30 @@ plt.gcf().patch.set_facecolor(background_color)
 output_img_path = os.path.join(script_dir, '..', 'Images', 'confusion_matrix.png')
 plt.tight_layout()
 plt.savefig(output_img_path, facecolor=background_color)
+plt.close()
+
+from sklearn.model_selection import learning_curve
+
+# CURVA DE APRENDIZAJE
+train_sizes, train_scores, test_scores = learning_curve(
+    model, X, y, cv=5, scoring='accuracy', n_jobs=-1, train_sizes=np.linspace(0.1, 1.0, 10))
+
+train_scores_mean = np.mean(train_scores, axis=1)
+test_scores_mean = np.mean(test_scores, axis=1)
+
+plt.figure(figsize=image_size)
+plt.plot(train_sizes, train_scores_mean, label="Entrenamiento", color=text_color, lw=3)
+plt.plot(train_sizes, test_scores_mean, label="Validación", color="#E377C2", lw=3)
+plt.title("Curva de Aprendizaje", fontsize=titlefontsize, color=text_color)
+plt.xlabel("Tamaño del conjunto de entrenamiento", fontsize=fontsize, color=text_color)
+plt.ylabel("Precisión", fontsize=fontsize, color=text_color)
+plt.legend(loc="best", fontsize=fontsize)
+plt.grid(True)
+plt.gca().set_facecolor(background_color)
+plt.gcf().patch.set_facecolor(background_color)
+
+# Guardar imagen
+lc_path = os.path.join(script_dir, '..', 'Images', 'learning_curve.png')
+plt.tight_layout()
+plt.savefig(lc_path, facecolor=background_color)
 plt.close()
