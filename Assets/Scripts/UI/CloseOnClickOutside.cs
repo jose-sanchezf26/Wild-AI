@@ -69,7 +69,14 @@ public class CloseOnClickOutside : MonoBehaviour
             if (!clickedOnThisPanel)
             {
                 if (pause)
+                {
                     Time.timeScale = 1f;
+                    var renderer = FindFirstObjectByType<ObjectiveUIRenderer>();
+                    if (renderer != null)
+                    {
+                        LayoutRebuilder.ForceRebuildLayoutImmediate(renderer.GetComponent<RectTransform>());
+                    }
+                }
                 panelToClose.SetActive(false);
                 EventLogger.Instance.LogEvent(new EventData("wai-close_window", new WindowEvent(ObjectiveManager.Instance.level, gameObject.name)));
             }

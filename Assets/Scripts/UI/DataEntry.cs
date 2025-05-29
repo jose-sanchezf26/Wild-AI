@@ -21,7 +21,7 @@ public class DataEntry : MonoBehaviour
         transform.Find("Weight").GetComponent<TextMeshProUGUI>().text = animal.weight.ToString("F2");
         if (transform.Find("Color") != null)
             transform.Find("Color").GetComponent<TextMeshProUGUI>().text = animal.color;
-        if (transform.Find("Level") != null)
+        if (transform.Find("Name") != null)
             transform.Find("Name").GetComponent<TextMeshProUGUI>().text = animal.name;
     }
 }

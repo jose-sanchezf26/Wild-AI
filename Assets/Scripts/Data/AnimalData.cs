@@ -17,8 +17,6 @@ public class AnimalData
         float weightBase = height * width * densityFactor;
         float noise = weightBase * Random.Range(-noisePercentage, noisePercentage);
         weight = weightBase + noise;
-        color = "indeterminado"; // Inicializar color como indeterminado
-        // TODO
-        // color = possibleColors[Random.Range(0, possibleColors.Length)].colorName;
+        color = possibleColors[Random.Range(0, possibleColors.Length)].colorName;
     }
 }

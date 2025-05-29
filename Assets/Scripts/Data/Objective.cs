@@ -34,7 +34,7 @@ public class Objective : MonoBehaviour
     public void UpgradeProgress(float score)
     {
         // Se suma el score y se actualiza la cadena
-        if (objectiveType == ObjectiveType.AchieveScore || objectiveType == ObjectiveType.CompleteTask)
+        if (objectiveType == ObjectiveType.AchieveScore)
         {
             scoreAchieved += score;
             if (scoreAchieved >= scoreToAchieve)
@@ -42,6 +42,11 @@ public class Objective : MonoBehaviour
                 isCompleted = true;
                 EventLogger.Instance.LogEvent(new EventData("wai-complete_objective", new CompleteObjectiveEvent(ObjectiveManager.Instance.level, objectiveName)));
                 tick.SetActive(true);
+            }
+            else
+            {
+                isCompleted = false;
+                tick.SetActive(false);
             }
             UpdateText();
         }
@@ -54,8 +59,37 @@ public class Objective : MonoBehaviour
                 EventLogger.Instance.LogEvent(new EventData("wai-complete_objective", new CompleteObjectiveEvent(ObjectiveManager.Instance.level, objectiveName)));
                 tick.SetActive(true);
             }
+            else
+            {
+                isCompleted = false;
+                tick.SetActive(false);
+            }
             UpdateText();
         }
+        if (objectiveType == ObjectiveType.CompleteTask)
+        {
+            if (score > 0)
+            {
+                isCompleted = true;
+                tick.SetActive(true);
+                EventLogger.Instance.LogEvent(new EventData("wai-complete_objective", new CompleteObjectiveEvent(ObjectiveManager.Instance.level, objectiveName)));
+                UpdateText();
+            }
+            else
+            {
+                isCompleted = false;
+                tick.SetActive(false);
+            }
+        }
+    }
+
+    public void CompleteObjective()
+    {
+        // Marca el objetivo como completado
+        isCompleted = true;
+        tick.SetActive(true);
+        EventLogger.Instance.LogEvent(new EventData("wai-complete_objective", new CompleteObjectiveEvent(ObjectiveManager.Instance.level, objectiveName)));
+        UpdateText();
     }
 
     private void UpdateText()

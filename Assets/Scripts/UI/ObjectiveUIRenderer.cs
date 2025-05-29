@@ -1,4 +1,6 @@
+using UnityEditor.Overlays;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectiveUIRenderer : MonoBehaviour
 {
@@ -17,6 +19,7 @@ public class ObjectiveUIRenderer : MonoBehaviour
             objective.Initialize(uiPrefab, uiParent);
             Debug.Log("Objective renderizado: " + objective.objectiveName);
         }
+        LayoutRebuilder.ForceRebuildLayoutImmediate(GetComponent<RectTransform>());
     }
 
 }

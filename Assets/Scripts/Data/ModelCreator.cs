@@ -25,16 +25,16 @@ public class ModelCreator : MonoBehaviour
     public void CreateModel()
     {
         ExportAnimalData();
-        ExecutePythonFile(createModelFileName);
         modelCreated = true;
+        ExecutePythonFile(createModelFileName);
     }
 
     public void CreateModelWithParameters()
     {
         ExportAnimalData();
         ExportModelParameters();
-        ExecutePythonFile(createModelFileName);
         modelCreated = true;
+        ExecutePythonFile(createModelFileName);
     }
 
     public void ExportAnimalData(string fileName = "animal_data.csv")
@@ -116,14 +116,17 @@ public class ModelCreator : MonoBehaviour
 
             // Log de la salida
             UnityEngine.Debug.Log("Python Output: " + output);
+
             if (!string.IsNullOrEmpty(error))
             {
+                modelCreated = false;
                 UnityEngine.Debug.LogError("Python Error: " + error);
                 NotificationManager.Instance.ShowNotification("Error al crear el modelo");
             }
         }
         catch (Exception e)
         {
+            modelCreated = false;
             UnityEngine.Debug.LogError("Error ejecutando el script Python: " + fileName + " " + e.Message);
             NotificationManager.Instance.ShowNotification("Error al crear el modelo");
         }
@@ -138,10 +141,10 @@ public class ModelCreator : MonoBehaviour
 
     public void GoToTestScene()
     {
-        Time.timeScale = 1f;
         // Cambia a la escena de prueba
         if (modelCreated)
         {
+            Time.timeScale = 1f;
             string sceneName = "TestLevel" + level.ToString();
             UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
@@ -218,8 +221,10 @@ public class ModelCreator : MonoBehaviour
             }
             else
             {
+
                 string predictedAnimal = jsonObject["predicted_animal"].Value<string>();
                 predictionText.text = predictedAnimal;
+                CheckModelUsingBalancing();
             }
         }
     }
@@ -277,6 +282,21 @@ public class ModelCreator : MonoBehaviour
         string json = JsonConvert.SerializeObject(parametersDict, Formatting.Indented);
         string path = Application.dataPath + "/Python/Data/model_parameters.json";
         File.WriteAllText(path, json);
+    }
+
+    // Función para comprobar si el modelo utiliza técnica de desbalanceo
+    public void CheckModelUsingBalancing()
+    {
+        string path = Application.dataPath + "/Python/Data/model_parameters.json";
+        string json = File.ReadAllText(path);
+        if (json.Contains("Técnica de desbalanceo\": \"\""))
+        {
+            ObjectiveManager.Instance.AddScoreToObjective("Create model desbalanced", 1);
+        }
+        else
+        {
+            ObjectiveManager.Instance.AddScoreToObjective("Create model balanced", 1);
+        }
     }
 }
 

@@ -35,10 +35,59 @@ public class AnimalDataSingleton : MonoBehaviour
         newAnimal.id = animalCount;
         animalCount++;
         animalDataList.Add(newAnimal);
+        // Objetivo del nivel 5
+        if (ObjectiveManager.Instance.level == 5)
+        {
+            CheckDesbalanceObjective();
+        }
     }
 
     public void RemoveAnimal(AnimalData animal)
     {
         animalDataList.Remove(animal);
+        // Objetivo del nivel 5
+        if (ObjectiveManager.Instance.level == 5)
+        {
+            CheckDesbalanceObjective();
+        }
+    }
+
+    public void CheckDesbalanceObjective()
+    {
+        if (CheckDesbalance())
+        {
+            ObjectiveManager.Instance.AddScoreToObjective("Desbalanced data", 1);
+        } else
+        {
+            ObjectiveManager.Instance.AddScoreToObjective("Desbalanced data", -1);
+        }
+    }
+
+    public bool CheckDesbalance()
+    {
+        int osos = 0, zorros = 0, lobos = 0, ciervos = 0;
+
+        // Contamos cuántos hay de cada especie
+        foreach (var animal in animalDataList)
+        {
+            switch (animal.name.ToLower())
+            {
+                case "oso":
+                    osos++;
+                    break;
+                case "zorro":
+                    zorros++;
+                    break;
+                case "lobo":
+                    lobos++;
+                    break;
+                case "ciervo":
+                    ciervos++;
+                    break;
+            }
+        }
+
+        bool criterio = (osos >= 2 * lobos) && (osos >= 2 * ciervos) && (zorros >= 2 * lobos) && (zorros >= 2 * ciervos) && (ciervos > 0) && (lobos > 0) && (osos > 0) && (zorros > 0);
+        return criterio;
     }
 }
