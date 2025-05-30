@@ -29,14 +29,16 @@ public class WindowsManager : MonoBehaviour
                     Time.timeScale = 0f;
                     if (ruler != null) ruler.RestartPosition();
                     if (weightScale != null) weightScale.RestartPosition();
+                    EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "RegisterPanel")));
                 }
                 else
                 {
                     Time.timeScale = 1f;
                     if (animalImage != null) animalImage.SetActive(false);
                     if (animalNumber != null) animalNumber.SetActive(false);
+                    EventLogger.Instance.LogEvent(new EventData("wai-close_window", new WindowEvent(ObjectiveManager.Instance.level, "RegisterPanel")));
                 }
-                EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "RegisterPanel")));
+
                 CloseWindowsExcept(registerWindow);
             }
         }
@@ -47,11 +49,17 @@ public class WindowsManager : MonoBehaviour
             if (dataWindow != null)
             {
                 if (!dataWindow.activeSelf)
+                {
                     Time.timeScale = 0f;
+                    EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "DataPanel")));
+                }
                 else
+                {
                     Time.timeScale = 1f;
+                    EventLogger.Instance.LogEvent(new EventData("wai-close_window", new WindowEvent(ObjectiveManager.Instance.level, "DataPanel")));
+                }
 
-                EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "DataPanel")));
+
                 CloseWindowsExcept(dataWindow);
             }
         }
@@ -62,11 +70,15 @@ public class WindowsManager : MonoBehaviour
             if (preprocessingWindow != null)
             {
                 if (!preprocessingWindow.activeSelf)
+                {
                     Time.timeScale = 0f;
+                    EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "PreprocessingPanel")));
+                }
                 else
+                {
                     Time.timeScale = 1f;
-
-                EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "PreprocessingPanel")));
+                    EventLogger.Instance.LogEvent(new EventData("wai-close_window", new WindowEvent(ObjectiveManager.Instance.level, "PreprocessingPanel")));
+                }
                 CloseWindowsExcept(preprocessingWindow);
             }
         }
@@ -76,11 +88,15 @@ public class WindowsManager : MonoBehaviour
             if (graphicsWindow != null)
             {
                 if (!graphicsWindow.activeSelf)
+                {
                     Time.timeScale = 0f;
+                    EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "GraphicsPanel")));
+                }
                 else
+                {
                     Time.timeScale = 1f;
-
-                EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "GraphicsPanel")));
+                    EventLogger.Instance.LogEvent(new EventData("wai-close_window", new WindowEvent(ObjectiveManager.Instance.level, "GraphicsPanel")));
+                }
                 CloseWindowsExcept(graphicsWindow);
             }
         }
@@ -91,11 +107,15 @@ public class WindowsManager : MonoBehaviour
             if (modelCreationWindow != null)
             {
                 if (!modelCreationWindow.activeSelf)
+                {
                     Time.timeScale = 0f;
+                    EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "ModelPanel")));
+                }
                 else
+                {
                     Time.timeScale = 1f;
-
-                EventLogger.Instance.LogEvent(new EventData("wai-open_window", new WindowEvent(ObjectiveManager.Instance.level, "ModelPanel")));
+                    EventLogger.Instance.LogEvent(new EventData("wai-close_window", new WindowEvent(ObjectiveManager.Instance.level, "ModelPanel")));
+                }
                 CloseWindowsExcept(modelCreationWindow);
             }
         }
@@ -146,6 +166,7 @@ public class WindowsManager : MonoBehaviour
         string sceneName = "Level" + level.ToString();
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(sceneName);
+        EventLogger.Instance.LogEvent(new EventData("wai-go_train_scene", new LevelEvent(level)));
         // AnimalDataManager.Instance.LoadAnimalList();
     }
 

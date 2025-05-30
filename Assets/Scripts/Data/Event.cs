@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 
 // Clases que definen los tipos de evento y sus campos
@@ -103,5 +104,41 @@ public class AnimalEvent : LevelEvent
         width = animal.width;
         weight = animal.weight;
         color = animal.color;
+    }
+}
+
+[JsonObject(MemberSerialization.OptIn)]
+public class CreateModelEvent : PlayerEvent
+{
+    [JsonProperty]
+    public JObject parameters;
+
+    public CreateModelEvent(string parameters) : base()
+    {
+        this.parameters = JObject.Parse(parameters);
+    }
+}
+
+[JsonObject(MemberSerialization.OptIn)]
+public class TestAnimalEvent : LevelEvent
+{
+    [JsonProperty]
+    public string height;
+    [JsonProperty]
+    public string width;
+    [JsonProperty]
+    public string weight;
+    [JsonProperty]
+    public string color;
+    [JsonProperty]
+    public string predictedType;
+
+    public TestAnimalEvent(int level, string width, string height, string weight, string color, string predictedType) : base(level)
+    {
+        this.height = height;
+        this.width = width;
+        this.weight = weight;
+        this.color = color;
+        this.predictedType = predictedType;
     }
 }

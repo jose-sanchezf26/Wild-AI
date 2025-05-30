@@ -45,6 +45,7 @@ public class AnimalDataSingleton : MonoBehaviour
     public void RemoveAnimal(AnimalData animal)
     {
         animalDataList.Remove(animal);
+        EventLogger.Instance.LogEvent(new EventData("wai-delete_animal", new AnimalEvent(ObjectiveManager.Instance.level, animal)));
         // Objetivo del nivel 5
         if (ObjectiveManager.Instance.level == 5)
         {

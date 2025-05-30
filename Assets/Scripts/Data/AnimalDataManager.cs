@@ -75,12 +75,6 @@ public class AnimalDataManager : MonoBehaviour
         }
     }
 
-    public void RemoveAnimal(AnimalData animal)
-    {
-        AnimalDataSingleton.Instance.RemoveAnimal(animal);
-        EventLogger.Instance.LogEvent(new EventData("wai-delete_animal", new AnimalEvent(ObjectiveManager.Instance.level, animal)));
-    }
-
     // Autogenerador
     public bool autoGenerate = false;
     public int autoGenerateCount = 9;

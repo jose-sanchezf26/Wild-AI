@@ -27,6 +27,10 @@ public class ModelCreator : MonoBehaviour
         ExportAnimalData();
         modelCreated = true;
         ExecutePythonFile(createModelFileName);
+        if (modelCreated)
+        {
+            NotificationManager.Instance.ShowNotification("Modelo creado con éxito!");
+        }
     }
 
     public void CreateModelWithParameters()
@@ -35,6 +39,11 @@ public class ModelCreator : MonoBehaviour
         ExportModelParameters();
         modelCreated = true;
         ExecutePythonFile(createModelFileName);
+        if (modelCreated)
+        {
+            NotificationManager.Instance.ShowNotification("Modelo creado con éxito!");
+            EventLogger.Instance.LogEvent(new EventData("wai-model_created", new CreateModelEvent(parameters)));
+        }
     }
 
     public void ExportAnimalData(string fileName = "animal_data.csv")
@@ -148,6 +157,7 @@ public class ModelCreator : MonoBehaviour
             string sceneName = "TestLevel" + level.ToString();
             UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+            EventLogger.Instance.LogEvent(new EventData("wai-go_test_scene", new LevelEvent(level)));
         }
         else
             NotificationManager.Instance.ShowNotification("¡Primero crea el modelo!");
@@ -223,9 +233,11 @@ public class ModelCreator : MonoBehaviour
             {
 
                 string predictedAnimal = jsonObject["predicted_animal"].Value<string>();
+                EventLogger.Instance.LogEvent(new EventData("wai-predict_animal", new TestAnimalEvent(ObjectiveManager.Instance.level, widthInput.text, heightInput.text, weightInput.text, colorDropdown.options[colorDropdown.value].text, predictedAnimal)));
                 predictionText.text = predictedAnimal;
                 CheckModelUsingBalancing();
             }
+            NotificationManager.Instance.ShowNotification("Predicción realizada con éxito!");
         }
     }
 
@@ -257,6 +269,7 @@ public class ModelCreator : MonoBehaviour
     // Exportar configuración del modelo a JSON
     public TMP_Dropdown modelTypeDropdown;
     public List<ModelParameter> modelParameters;
+    private string parameters = "";
 
     public void ExportModelParameters()
     {
@@ -280,6 +293,7 @@ public class ModelCreator : MonoBehaviour
         }
         // Se crea el JSON con los parámetros del modelo y se guarda
         string json = JsonConvert.SerializeObject(parametersDict, Formatting.Indented);
+        parameters = json;
         string path = Application.dataPath + "/Python/Data/model_parameters.json";
         File.WriteAllText(path, json);
     }
