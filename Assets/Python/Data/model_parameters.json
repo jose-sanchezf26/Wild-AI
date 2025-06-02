@@ -1,15 +1,12 @@
 {
-  "modelType": "Decision Tree",
-  "C": "",
+  "modelType": "Logistic Regression",
+  "C": "10",
   "penalty": "l1",
-  "max_iter": "",
-  "max_depth": "10",
-  "min_samples_split": "15",
-  "criterion": "gini",
-  "% Train": "80",
+  "max_iter": "100",
+  "% Train": "60",
   "% Test": "",
   "Datos nulos": "Eliminar",
-  "Normalización": "Min-Max",
+  "Normalización": "",
   "Categorización": "One-Hot",
-  "Técnica de desbalanceo": "SMOTE"
+  "Técnica de desbalanceo": ""
 }

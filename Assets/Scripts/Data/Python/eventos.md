@@ -16,3 +16,8 @@
 | Jose  | Wild AI | 2d2bb501-78f8-4dd9-99a1-ad80160f2792      | wai-delete_animal | 03/03/2025 12:30:58         | {"level": 1, "type": "bear", "height": 120, "width": 90, "weight": 600, "color": "brown"}           | Borra un animal manualmente|
 | Jose  | Wild AI | 2d2bb501-78f8-4dd9-99a1-ad80160f2792      | wai-predict_animal | 03/03/2025 12:30:58         |     {"height": "1,08","width": "1,68","weight": "128,47","color": "Marron","predictedType": "Zorro","level": 5}      | Prueba el modelo con un animal|
 | Jose  | Wild AI | 2d2bb501-78f8-4dd9-99a1-ad80160f2792      | wai-model_created | 03/03/2025 12:30:58         | {"parameters": {"modelType": "Decision Tree","C": "","penalty": "l1","max_iter":"","max_depth": "5","min_samples_split": "5","criterion": "gin "% Train": "50""% Test": "","Datos nulos": "","Normalización": "","Categorización": "One-Hot","Técnica de desbalanceo": ""    }}      |Crea un modelo sin errores|
+
+Posibles soluciones:
+
+- Añadir en la plataforma una página de tutorial de instalación de juego con un enlace de descarga.
+- Crear una API en Django para ejecutar los scripts de python. Habría que modificar toda la funcionalidad relacionada con python dentro del juego, tanto la forma de exportar los datos de entrenamiento, como el paso de parámetros y la generación de gráficas.
