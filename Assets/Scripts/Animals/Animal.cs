@@ -1,4 +1,3 @@
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -59,11 +58,6 @@ public class Animal : MonoBehaviour
         float weightBase = height * width * densityFactor;
         float noise = weightBase * Random.Range(-noisePercentage, noisePercentage);
         weight = weightBase + noise;
-    }
-
-    public AnimalData CreateAnimalData()
-    {
-        return new AnimalData(animalName, heightRange, widthRange, densityFactor, possibleColors, 0.3f);
     }
 
     void OnCollisionEnter2D(Collision2D collision)

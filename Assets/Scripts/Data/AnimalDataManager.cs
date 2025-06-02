@@ -108,7 +108,7 @@ public class AnimalDataManager : MonoBehaviour
         {
             for (int i = 0; i < autoGenerateCount; i++)
             {
-                AnimalData newAnimal = new AnimalData(animalName, heightRange, widthRange, densityFactor, possibleColors, 0.3f); // Generar datos de animal
+                AnimalData newAnimal = new AnimalData(animalName, heightRange, widthRange, densityFactor, possibleColors, noisePercentage, nullPercentage); // Generar datos de animal
                 AnimalDataSingleton.Instance.AddAnimal(newAnimal);
                 AddAnimalToPanel(newAnimal); // Añadir al panel
             }

@@ -46,6 +46,9 @@ public class ModelCreator : MonoBehaviour
         }
     }
 
+    string SafeNumber(float val) =>
+    float.IsNaN(val) ? "" : val.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+
     public void ExportAnimalData(string fileName = "animal_data.csv")
     {
         StringBuilder csvContent = new StringBuilder();
@@ -60,9 +63,9 @@ public class ModelCreator : MonoBehaviour
             // Contenido
             foreach (var animal in AnimalDataSingleton.Instance.animalDataList)
             {
-                string width = animal.width.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
-                string height = animal.height.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
-                string weight = animal.weight.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+                string width = SafeNumber(animal.width);
+                string height = SafeNumber(animal.height);
+                string weight = SafeNumber(animal.weight);
                 string line = $"{weight},{height},{width}";
                 csvContent.AppendLine(line);
             }
@@ -75,9 +78,9 @@ public class ModelCreator : MonoBehaviour
             // Contenido
             foreach (var animal in AnimalDataSingleton.Instance.animalDataList)
             {
-                string width = animal.width.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
-                string height = animal.height.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
-                string weight = animal.weight.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+                string width = SafeNumber(animal.width);
+                string height = SafeNumber(animal.height);
+                string weight = SafeNumber(animal.weight);
                 string color = animal.color;
                 string animalType = animal.name;
                 string line = $"{weight},{height},{width},{color},{animalType}";

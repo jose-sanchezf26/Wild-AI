@@ -6,7 +6,7 @@ import os
 
 script_dir = os.path.dirname(__file__)
 
-csv_path = os.path.join(script_dir, '..', 'Data', 'animal_data_eL5.csv')
+csv_path = os.path.join(script_dir, '..', 'Data', 'animal_data.csv')
 
 df = pd.read_csv(csv_path)
 

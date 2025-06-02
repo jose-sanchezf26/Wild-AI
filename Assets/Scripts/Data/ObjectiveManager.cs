@@ -61,7 +61,7 @@ public class ObjectiveManager : MonoBehaviour
             new Objective
             {
                 objectiveName = "Reach Error",
-                description = "Consigue un modelo con un error menor del 30% en cinco pruebas",
+                description = "Consigue un modelo con un error menor del 20% en cinco pruebas",
                 objectiveType = ObjectiveType.DecreaseValue,
                 scoreToAchieve = 20
             }

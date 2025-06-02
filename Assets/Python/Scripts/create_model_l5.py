@@ -27,7 +27,7 @@ def parse_val(val, default=1.0):
 
 script_dir = os.path.dirname(__file__)
 # TODO CAMBIAR EL NOMBRE DEL CSV POR EL BUENOO
-csv_path = os.path.join(script_dir, '..', 'Data', 'animal_data_eL5.csv')
+csv_path = os.path.join(script_dir, '..', 'Data', 'animal_data.csv')
 params_path = os.path.join(script_dir, '..', 'Data', 'model_parameters.json')
 
 # Cargamos los parámetros del modelo
@@ -60,7 +60,7 @@ elif null_strategy in ["Media", "Mediana", "Moda"]:
     data[numerical_cols] = imputer.fit_transform(data[numerical_cols])
     for col in categorical_cols:
         if data[col].isnull().any():
-            data[col].fillna(data[col].mode()[0], inplace=True)
+            data[col].fillna(data[col].mode()[0])
 
 # Categorización de variables
 categorization = params.get("Categorización", "")

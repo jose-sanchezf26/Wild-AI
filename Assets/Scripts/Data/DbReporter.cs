@@ -137,8 +137,8 @@ public class DbReporter : MonoBehaviour
     private async Task ConnectWebSocket()
     {
         Debug.Log("🟢 Intentando conectar WebSocket...");
-        // webSocket = new WebSocket("ws://localhost:8000/ws/game-events");
-        webSocket = new WebSocket("ws://localhost:8000");
+        webSocket = new WebSocket("ws://localhost:8000/ws/game-events");
+        // webSocket = new WebSocket("ws://localhost:8000");
         webSocket.OnOpen += () =>
     {
         Debug.Log("Connection open!");
