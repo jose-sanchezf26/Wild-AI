@@ -30,7 +30,7 @@ public class GenerateGraphics : MonoBehaviour
         // Ejecutar el .py que genera los gráficos
         modelCreator.ExecutePythonFile(pythonFileName);
         // Una vez se han generado los archivos, los cargamos
-        string folderPath = Path.Combine(Application.dataPath, "Python/Images");
+        string folderPath = Path.Combine(Application.streamingAssetsPath, "Python/Images");
         foreach (string imageName in imagesNames)
         {
             string imagePath = Path.Combine(folderPath, imageName);

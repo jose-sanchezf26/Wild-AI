@@ -16,7 +16,7 @@ public class LoadTestGraphics : MonoBehaviour
     void Start()
     {
         // Cargar imágenes
-        string folderPath = Path.Combine(Application.dataPath, "Python/Images");
+        string folderPath = Path.Combine(Application.streamingAssetsPath, "Python/Images");
         foreach (string imageName in imagesNames)
         {
             string imagePath = Path.Combine(folderPath, imageName);
@@ -34,7 +34,7 @@ public class LoadTestGraphics : MonoBehaviour
             }
         }
         // Cargar métricas
-        string path = Path.Combine(Application.dataPath, "Python", "Data", metricFileName);
+        string path = Path.Combine(Application.streamingAssetsPath, "Python", "Data", metricFileName);
 
         if (File.Exists(path))
         {

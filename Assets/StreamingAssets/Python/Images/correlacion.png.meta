@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b38a761348a73b246bd1cf466e977126
+guid: 7be843565034ea04495d935d99d69cf4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6116443157679341131
-    second: confusion_matrix_0
+      213: -9169771012292954998
+    second: correlacion_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: confusion_matrix_0
+      name: correlacion_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b187a9ba570e1ba0800000000000000
-      internalID: -6116443157679341131
+      spriteID: a84ba9c09dd6eb080800000000000000
+      internalID: -9169771012292954998
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      correlacion_0: -9169771012292954998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

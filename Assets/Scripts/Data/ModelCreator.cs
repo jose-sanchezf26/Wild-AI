@@ -91,7 +91,7 @@ public class ModelCreator : MonoBehaviour
 
 
         // Ruta de guardado
-        string folderPath = Path.Combine(Application.dataPath, "Python/data");
+        string folderPath = Path.Combine(Application.streamingAssetsPath, "Python/data");
         string filePath = Path.Combine(folderPath, fileName);
         File.WriteAllText(filePath, csvContent.ToString());
 
@@ -107,7 +107,7 @@ public class ModelCreator : MonoBehaviour
             startInfo.FileName = "py"; // O usa "python3" si estás en un sistema que lo requiere
 
             // Ruta del script Python
-            string folderPath = Path.Combine(Application.dataPath, "Python/Scripts");
+            string folderPath = Path.Combine(Application.streamingAssetsPath, "Python/Scripts");
             string scriptPath = Path.Combine(folderPath, fileName);
             startInfo.Arguments = $"\"{scriptPath}\"";
 
@@ -205,14 +205,14 @@ public class ModelCreator : MonoBehaviour
         }
         json = JsonConvert.SerializeObject(data, Formatting.Indented);
 
-        string path = Application.dataPath + "/Python/Data/input.json";
+        string path = Application.streamingAssetsPath + "/Python/Data/input.json";
         File.WriteAllText(path, json);
 
         // Ejecuta el script de Python
         ExecutePythonFile(testModelFileName);
 
         // Obtiene la predicción y el error del modelo
-        string outputPath = Application.dataPath + "/Python/Data/output.json";
+        string outputPath = Application.streamingAssetsPath + "/Python/Data/output.json";
         if (File.Exists(outputPath))
         {
             string outputJson = File.ReadAllText(outputPath);
@@ -297,14 +297,14 @@ public class ModelCreator : MonoBehaviour
         // Se crea el JSON con los parámetros del modelo y se guarda
         string json = JsonConvert.SerializeObject(parametersDict, Formatting.Indented);
         parameters = json;
-        string path = Application.dataPath + "/Python/Data/model_parameters.json";
+        string path = Application.streamingAssetsPath + "/Python/Data/model_parameters.json";
         File.WriteAllText(path, json);
     }
 
     // Función para comprobar si el modelo utiliza técnica de desbalanceo
     public void CheckModelUsingBalancing()
     {
-        string path = Application.dataPath + "/Python/Data/model_parameters.json";
+        string path = Application.streamingAssetsPath + "/Python/Data/model_parameters.json";
         string json = File.ReadAllText(path);
         if (json.Contains("Técnica de desbalanceo\": \"\""))
         {

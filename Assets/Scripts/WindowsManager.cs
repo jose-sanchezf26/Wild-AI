@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -175,6 +176,13 @@ public class WindowsManager : MonoBehaviour
         string sceneName = "LevelSelection";
         ObjectiveManager.InitializeAllLevelObjectives();
         EventLogger.Instance.LogEvent(new EventData("wai-exit_level", new LevelEvent(level)));
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void OpenLevelSelectionInLogIn(TMP_InputField inputField)
+    {
+        FlowManager.instance.loggedInUser = inputField.text;
+        string sceneName = "LevelSelection";
         SceneManager.LoadScene(sceneName);
     }
 

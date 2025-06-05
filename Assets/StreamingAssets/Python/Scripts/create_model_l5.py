@@ -27,7 +27,7 @@ def parse_val(val, default=1.0):
 
 script_dir = os.path.dirname(__file__)
 # TODO CAMBIAR EL NOMBRE DEL CSV POR EL BUENOO
-csv_path = os.path.join(script_dir, '..', 'Data', 'animal_data.csv')
+csv_path = os.path.join(script_dir, '..', 'Data', 'animal_data_eL5.csv')
 params_path = os.path.join(script_dir, '..', 'Data', 'model_parameters.json')
 
 # Cargamos los parámetros del modelo
@@ -84,7 +84,7 @@ elif categorization == "Label":
     
 
 # Normalización
-scaling_method = params.get("Nomalización", "")
+scaling_method = params.get("Normalización", "")
 if scaling_method == "Min-Max":
     scaler = MinMaxScaler()
 elif scaling_method == "Z-Score":
