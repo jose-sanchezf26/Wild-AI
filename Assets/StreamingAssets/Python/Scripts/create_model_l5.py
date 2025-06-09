@@ -27,7 +27,7 @@ def parse_val(val, default=1.0):
 
 script_dir = os.path.dirname(__file__)
 # TODO CAMBIAR EL NOMBRE DEL CSV POR EL BUENOO
-csv_path = os.path.join(script_dir, '..', 'Data', 'animal_data_eL5.csv')
+csv_path = os.path.join(script_dir, '..', 'Data', 'animal_data.csv')
 params_path = os.path.join(script_dir, '..', 'Data', 'model_parameters.json')
 
 # Cargamos los parámetros del modelo
@@ -140,7 +140,7 @@ if model_type == "Logistic Regression":
     c = parse_val(params.get("C"), default=1.0)
     penalty = params.get("penalty", "l2")
     max_iter = int(parse_val(params.get("max_iter"), default=100))
-    model = LogisticRegression(C=c, penalty=penalty, max_iter=max_iter, solver="saga")
+    model = LogisticRegression(C=c, penalty=penalty, max_iter=max_iter, solver="liblinear")
 
 elif model_type == "Decision Tree":
     max_depth = int(parse_val(params.get("max_depth"), default=None))
@@ -163,6 +163,8 @@ joblib.dump(model, model_save_path)
 # Evaluación
 y_pred = model.predict(X_test)
 
+print("Clases reales:", sorted(y_test.unique()))
+print("Clases predichas:", sorted(np.unique(y_pred)))
 
 # Métricas
 report = classification_report(y_test, y_pred, digits=2)

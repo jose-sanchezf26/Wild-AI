@@ -124,7 +124,16 @@ public class ModelCreator : MonoBehaviour
             string error = process.StandardError.ReadToEnd();
 
             // Espera hasta que el proceso termine
-            process.WaitForExit();
+            bool exited = process.WaitForExit(30000); // 30 segundos
+
+            if (!exited)
+            {
+                process.Kill(); // Matar si se pasó de tiempo
+                UnityEngine.Debug.LogError("Python script timeout: proceso detenido");
+                NotificationManager.Instance.ShowNotification("Se tardó demasiado en crear el modelo");
+                modelCreated = false;
+                return;
+            }
 
             // Log de la salida
             UnityEngine.Debug.Log("Python Output: " + output);

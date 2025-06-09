@@ -1,12 +1,12 @@
 {
   "modelType": "Logistic Regression",
-  "C": "5",
-  "penalty": "l1",
-  "max_iter": "100",
-  "% Train": "60",
+  "C": "0.01",
+  "penalty": "l2",
+  "max_iter": "500",
+  "% Train": "80",
   "% Test": "",
-  "Datos nulos": "",
-  "Normalización": "Min-Max",
+  "Datos nulos": "Eliminar",
+  "Normalización": "",
   "Categorización": "One-Hot",
   "Técnica de desbalanceo": ""
 }
